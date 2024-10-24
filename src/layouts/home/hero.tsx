@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <Background
       src="/home-header.webp"
-      className="items-center w-full max-w-screen-xl px-4 mx-auto sm:px-8 min-h-500 lg:min-h-custom-header"
+      className="items-center max-w-screen-xl px-4 sm:px-8 min-h-500 lg:min-h-custom-header"
       parentClassName="filter"
     >
       <div className="max-w-screen-lg space-y-4">

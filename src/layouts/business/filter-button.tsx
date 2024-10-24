@@ -117,7 +117,7 @@ export const FilterButton = ({ business }: { business: BusinessesTypes | undefin
               <Motion tag="div" initialY={30} animateY={0} duration={1} delay={index * 0.1}>
                 <Background
                   src={"/temp-business.webp"}
-                  className="flex-col justify-end w-full py-2 h-72 sm:h-80 filter-image"
+                  className="flex-col justify-end px-4 py-2 h-72 sm:h-80 filter-image sm:px-8"
                   parentClassName="rounded-lg"
                   isHover
                 >

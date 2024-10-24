@@ -21,19 +21,19 @@ export const Businesses = () => {
     setBusinessSlug(slug);
   };
 
-  if (loading) {
-    return (
-      <div className="flex justify-center py-32">
-        <div className="loader"></div>
-      </div>
-    );
-  }
-
   return (
     <>
       <SelectButton handleFilterBusiness={handleFilterBusiness} businessSlug={businessSlug} />
-      <Description business={business?.data} />
-      <FilterButton business={business?.data} />
+      {loading ? (
+        <div className="flex justify-center py-32">
+          <div className="loader"></div>
+        </div>
+      ) : (
+        <>
+          <Description business={business?.data} />
+          <FilterButton business={business?.data} />
+        </>
+      )}
     </>
   );
 };

@@ -17,16 +17,24 @@ export const Services = () => {
         {serviceLists.map((item, index, row) => (
           <div
             key={index}
-            className={`px-8 pt-40 hover:pt-20 space-y-8 text-center duration-300 hover:bg-primary group ${
+            className={`px-8 pt-40 hover:pt-20 space-y-8 text-center duration-300 hover:bg-primary ${
               index + 1 === row.length ? "border-none" : "border-r"
             }`}
             onMouseEnter={() => setImgHover(index)}
             onMouseLeave={() => setImgHover(null)}
           >
-            <Img src={imgHover == index ? item.pathImgHover : item.pathImg} alt={item.title} className="mx-auto size-20 group-hover:size-16" />
-            <h3 className="text-3xl font-semibold group-hover:text-2xl">{item.title}</h3>
+            <Img
+              src={imgHover == index ? item.pathImgHover : item.pathImg}
+              alt={item.title}
+              className={`mx-auto ${imgHover === index ? "size-16" : "size-20"}`}
+            />
+            <h3 className={`font-semibold ${imgHover === index ? "text-2xl" : "text-3xl"}`}>{item.title}</h3>
 
-            <p className="h-0 text-sm transition-all duration-300 -translate-y-full opacity-0 group-hover:h-auto group-hover:translate-y-0 group-hover:opacity-100">
+            <p
+              className={`text-sm transition-all duration-300 ${
+                imgHover === index ? "h-auto translate-y-0 opacity-100" : "h-0 -translate-y-full opacity-0 "
+              }`}
+            >
               {item.description}
             </p>
           </div>
