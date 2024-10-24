@@ -1,0 +1,111 @@
+{
+  "HomePage": {
+    "title": "Hello China"
+  },
+  "header": {
+    "home": "首页",
+    "profile": {
+      "title": "个人资料",
+      "about-us": {
+        "title": "关于我们",
+        "description": "了解公司的背景和核心价值观。"
+      },
+      "vision-mission": {
+        "title": "愿景与使命",
+        "description": " 探索指导我们前进的长期目标。"
+      },
+      "organizational": {
+        "title": "组织结构",
+        "description": "认识团队和各自的角色，以实现公司的愿景。"
+      },
+      "legality": {
+        "title": "合法性、证书与奖项",
+        "description": "提供有关营业执照、显示质量标准的证书，以及我们获得的奖项，体现我们的奉献精神。"
+      }
+    },
+    "business": {
+      "title": "商业",
+      "services": {
+        "title": "服务",
+        "description": "了解我们为支持各行业需求提供的服务。"
+      },
+      "products": {
+        "title": "产品",
+        "description": "探索我们开发的创新产品，以为客户提供最佳解决方案。"
+      },
+      "experiences": {
+        "title": "经验",
+        "description": "了解我们在以往项目中的经验和取得的成功。"
+      },
+      "business-sector": {
+        "title": "业务领域",
+        "description": "了解我们服务的业务领域，包括一般供应商、制造、管道项目、机械加工、机械、电气、土木工程和建筑。"
+      }
+    },
+    "media": {
+      "title": "媒体",
+      "company-activities": {
+        "title": "公司活动",
+        "description": "了解我们在项目执行中的最新公司活动信息。"
+      },
+      "articles": {
+        "title": "文章",
+        "description": "阅读关于我们及相关行业、创新和趋势的最新资讯和信息文章。"
+      }
+    },
+    "contact-us": "联系我们",
+    "career": {
+      "title": "职业",
+      "staff-professional": {
+        "title": "专业员工",
+        "description": "了解我们为希望加入团队的专业人士提供的职业机会。获取关于可用职位和所需资格的信息。"
+      },
+      "internship-program": {
+        "title": "实习",
+        "description": "探索我们为学生和应届毕业生提供的实习项目。获得宝贵经验，并直接向行业专家学习。"
+      }
+    }
+  },
+  "footer": {
+    "description": "相信我们，实现您的项目目标，从概念到完成。",
+    "profile": {
+      "title": "个人资料",
+      "fields": {
+        "one": "关于我们",
+        "two": "愿景与使命",
+        "three": "组织结构",
+        "four": "合法性与证书"
+      }
+    },
+    "business": {
+      "title": "商业",
+      "fields": {
+        "one": "服务 ",
+        "two": "产品 ",
+        "three": "经验 ",
+        "four": "业务领域"
+      }
+    },
+    "media": {
+      "title": "媒体 ",
+      "fields": {
+        "one": "博客",
+        "two": "画廊"
+      }
+    },
+    "contact-us": {
+      "title": "联系我们",
+      "fields": {
+        "one": "商务电话",
+        "two": "联系表单"
+      }
+    },
+    "career": {
+      "title": "职业",
+      "fields": {
+        "one": "实习",
+        "two": "专业员工"
+      }
+    }
+  }
+}

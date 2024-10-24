@@ -1,0 +1,111 @@
+{
+  "HomePage": {
+    "title": "Hello English"
+  },
+  "header": {
+    "home": "Home",
+    "profile": {
+      "title": "Profile",
+      "about-us": {
+        "title": "About Us",
+        "description": "Learn about the company's background and core values."
+      },
+      "vision-mission": {
+        "title": "Vision & Missions",
+        "description": "Discover the long-term goals that guide our steps."
+      },
+      "organizational": {
+        "title": "Organization Structure",
+        "description": "Get to know the team and their roles in achieving the company's vision."
+      },
+      "legality": {
+        "title": "Legality & Certifications",
+        "description": "Information on business licenses, quality standards certifications, and awards we've received as proof of our dedication."
+      }
+    },
+    "business": {
+      "title": "Business",
+      "services": {
+        "title": "Services",
+        "description": "Discover the services we offer to support various industry needs."
+      },
+      "products": {
+        "title": "Products",
+        "description": "Explore the innovative products we develop for optimal solutions for our customers."
+      },
+      "experiences": {
+        "title": "Experiences",
+        "description": "Learn about our experience in previous projects and the successes we have achieved."
+      },
+      "business-sector": {
+        "title": "Business Sector",
+        "description": "Get to know the business sectors we serve, including General Supplier, Fabrication, Piping Project, Machining, Mechanical, Electrical, Civil, and Construction."
+      }
+    },
+    "media": {
+      "title": "Media",
+      "company-activities": {
+        "title": "Company Activities",
+        "description": "Find the latest information about various company activities in our project execution."
+      },
+      "articles": {
+        "title": "Articles",
+        "description": " Read informative articles and the latest news about us, as well as relevant industry trends and innovations."
+      }
+    },
+    "career": {
+      "title": "Career",
+      "staff-professional": {
+        "title": "Professional Staff",
+        "description": "Explore career opportunities for professionals looking to join our team. Find information about available positions and required qualifications."
+      },
+      "internship-program": {
+        "title": "Internship Program",
+        "description": "Discover the internship programs we offer for students and recent graduates. Gain valuable experience and learn directly from industry experts."
+      }
+    },
+    "contact-us": "Contact Us"
+  },
+  "footer": {
+    "description": "Rely on Us to Deliver Your Project Goals from Concept to Completion",
+    "profile": {
+      "title": "Profile",
+      "fields": {
+        "one": "About Us",
+        "two": "Visions & Missions",
+        "three": "Organization Structure",
+        "four": "Legality, Certifications & Awards"
+      }
+    },
+    "business": {
+      "title": "Business",
+      "fields": {
+        "one": "Services",
+        "two": "Products",
+        "three": "Experiences",
+        "four": "Business Sector"
+      }
+    },
+    "media": {
+      "title": "Media",
+      "fields": {
+        "one": "Blogs & Articles",
+        "two": "Gallery"
+      }
+    },
+    "contact-us": {
+      "title": "Contact Us",
+      "fields": {
+        "one": "Business Phone",
+        "two": "Contact Form"
+      }
+    },
+    "career": {
+      "title": "Career",
+      "fields": {
+        "one": "Internship",
+        "two": "Professional Staff"
+      }
+    }
+  }
+}
