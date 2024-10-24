@@ -6,7 +6,7 @@ import { Link } from "@/i18n/routing";
 
 import { useToggleState } from "@/hooks";
 
-import { Button, LanguageSwitcher, Navbar } from "@/components";
+import { Button, Img, LanguageSwitcher, Navbar } from "@/components";
 
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 
@@ -43,8 +43,7 @@ export const Header = () => {
       <div className={`bg-light top-0 w-full transition-all duration-300 ease-in-out shadow ${isVisible ? "relative" : "fixed"}`}>
         <div className="flex items-center justify-between w-full h-20 max-w-screen-xl px-4 mx-auto sm:px-8">
           <Link href="/" className="flex items-center gap-2 font-bold">
-            {/* <Img className="min-w-56 sm:min-w-64 h-14 sm:h-16" src="/logo-company-navbar.png" alt="logo PT Amanah Aulia Mandiri" /> */}
-            logo company navbar
+            <Img className="h-14 min-w-28 max-w-28" src="/logo-company.png" alt="logo PT Amanah Aulia Mandiri" />
           </Link>
 
           <Navbar navbar={navbar} />

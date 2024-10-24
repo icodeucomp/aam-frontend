@@ -2,7 +2,7 @@ import { Link } from "@/i18n/routing";
 
 import { useTranslations } from "next-intl";
 
-import { Container } from "@/components";
+import { Container, Img } from "@/components";
 
 import { FooterLists } from "@/static";
 
@@ -17,8 +17,7 @@ export const Footer = () => {
       <Container className="flex justify-between gap-8 py-8 text-light">
         <div className="flex-1 space-y-4">
           <Link href="/" className="space-y-1">
-            {/* <Img className="size-10 sm:size-12 md:size-14" src="/logo-company.png" alt="logo PT Amanah Aulia Mandiri" /> */}
-            <h1 className="text-sm sm:text-base md:text-xl">PT Amanah Aulia Mandiri</h1>
+            <Img className="h-14 min-w-28 max-w-28" src="/logo-company.png" alt="logo PT Amanah Aulia Mandiri" />
           </Link>
           <h4 className="text-lg font-semibold sm:text-xl md:text-2xl">{t("description")}</h4>
           <p className="text-sm">Jl. Bhayangkara No.136B, Kota Serang-Banten 42118</p>
