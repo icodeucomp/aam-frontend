@@ -42,7 +42,7 @@ export const Header = () => {
       </div>
       <div className={`bg-light top-0 w-full transition-all duration-300 ease-in-out shadow ${isVisible ? "relative" : "fixed"}`}>
         <div className="flex items-center justify-between w-full h-20 max-w-screen-xl px-4 mx-auto sm:px-8">
-          <Link href="/" className="flex items-center gap-2 font-bold">
+          <Link href="/" className="flex items-center gap-2">
             <Img className="h-14 min-w-28 max-w-28" src="/logo-company.png" alt="logo PT Amanah Aulia Mandiri" />
           </Link>
 
@@ -53,9 +53,7 @@ export const Header = () => {
           </div>
 
           <div className="block lg:hidden">
-            <button onClick={toggleNavbar}>
-              {navbar ? <IoMdClose size={32} className="fill-primary" /> : <IoMdMenu size={32} className="fill-primary" />}
-            </button>
+            <button onClick={toggleNavbar}>{navbar ? <IoMdClose size={32} className="fill-primary" /> : <IoMdMenu size={32} className="fill-primary" />}</button>
           </div>
         </div>
       </div>

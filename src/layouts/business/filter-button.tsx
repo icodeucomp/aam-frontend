@@ -6,9 +6,14 @@ import { useMediaQuery } from "@/hooks";
 
 import { AnimatePresence } from "framer-motion";
 
-import { Background, Button, Container, ImageSlider, Modal, Motion, Pagination } from "@/components";
+import { Background, Button, Container, Dropdown, ImageSlider, Modal, Motion, Pagination } from "@/components";
 
 import { BusinessesTypes, BusinessSectorTypes } from "@/types";
+
+const data = [
+  { title: "Products", slug: "Products" },
+  { title: "Projects", slug: "Projects" },
+];
 
 export const FilterButton = ({ business }: { business: BusinessesTypes | undefined }) => {
   const [openModalIndex, setOpenModalIndex] = React.useState<string | null>(null);
@@ -27,6 +32,10 @@ export const FilterButton = ({ business }: { business: BusinessesTypes | undefin
 
   const filterBusiness = sectorBusiness?.find((item) => item.slug === openModalIndex);
 
+  const handleTypeBusiness = (slug: string) => {
+    setTypeBusiness(slug);
+  };
+
   React.useEffect(() => {
     const startIndex = (page - 1) * limit;
     if (business) {
@@ -38,10 +47,6 @@ export const FilterButton = ({ business }: { business: BusinessesTypes | undefin
         const paginatedProjects = business?.Project.slice(startIndex, startIndex + limit);
         setSectorBusiness(paginatedProjects);
       }
-      if (typeBusiness === "Services" && business?.Service.length > 0) {
-        const paginatedServices = business?.Service.slice(startIndex, startIndex + limit);
-        setSectorBusiness(paginatedServices);
-      }
     }
   }, [business, typeBusiness, limit, page]);
 
@@ -51,9 +56,6 @@ export const FilterButton = ({ business }: { business: BusinessesTypes | undefin
     }
     if (business && business?.Project.length > 0) {
       setTotalPage(Math.ceil(business?.Project?.length / limit));
-    }
-    if (business && business?.Service.length > 0) {
-      setTotalPage(Math.ceil(business?.Service?.length / limit));
     }
   }, [business, limit]);
 
@@ -73,35 +75,29 @@ export const FilterButton = ({ business }: { business: BusinessesTypes | undefin
     <div className="space-y-4">
       <div className="relative py-10 mx-auto text-center max-w-screen-2xl">
         <h3 className="heading">Type of Business</h3>
-        <p className="mt-2 subheading">Explore our various types of business solutions that suit your company&apos;s needs</p>
-        <div className="flex justify-center w-full max-w-xl gap-4 px-8 py-4 mx-auto mt-2">
+        <p className="mt-2 max-w-60 sm:max-w-sm md:max-w-md lg:max-w-xl mx-auto text-sm md:text-base">Explore our various types of business solutions that suit your company&apos;s needs</p>
+        <div className="justify-center w-full max-w-md md:max-w-xl gap-4 px-8 py-4 mx-auto mt-2 hidden lg:flex">
           <div className="flex gap-4 px-8 py-2 rounded-lg card-shadow bg-light">
-            <Button
-              onClick={() => setTypeBusiness("Products")}
-              className={`hover:text-light hover:bg-secondary ${typeBusiness === "Products" ? "text-light bg-secondary" : "text-secondary bg-light"}`}
-            >
-              Products
-            </Button>
-            <Button
-              onClick={() => setTypeBusiness("Projects")}
-              className={`hover:text-light hover:bg-secondary ${typeBusiness === "Projects" ? "text-light bg-secondary" : "text-secondary bg-light"}`}
-            >
-              Projects
-            </Button>
-            <Button
-              onClick={() => setTypeBusiness("Services")}
-              className={`hover:text-light hover:bg-secondary ${typeBusiness === "Services" ? "text-light bg-secondary" : "text-secondary bg-light"}`}
-            >
-              Services
-            </Button>
+            {data.map((item, index) => (
+              <Button
+                key={index}
+                onClick={() => handleTypeBusiness(item.slug)}
+                className={`hover:text-light hover:bg-secondary ${typeBusiness === item.slug ? "text-light bg-secondary" : "text-secondary bg-light"}`}
+              >
+                {item.title}
+              </Button>
+            ))}
           </div>
         </div>
-        <div className="absolute top-0 left-0 w-24 h-full bg-primary"></div>
-        <div className="absolute top-0 w-24 h-40 left-16 bg-secondary"></div>
-        <div className="absolute top-0 right-0 w-24 h-full bg-secondary"></div>
-        <div className="absolute bottom-0 w-24 h-40 right-16 bg-primary"></div>
+        <div className="absolute top-0 -left-4 sm:left-0 w-12 sm:w-16 md:w-20 lg:w-24 h-full bg-primary"></div>
+        <div className="absolute top-0 w-8 sm:w-16 lg:w-24 h-28 lg:h-40 left-4 sm:left-8 md:left-16 bg-secondary"></div>
+        <div className="absolute top-0 -right-4 sm:right-0 w-12 sm:w-16 md:w-20 lg:w-24 h-full bg-secondary"></div>
+        <div className="absolute bottom-0 w-8 sm:w-16 lg:w-24 h-28 lg:h-40 right-4 sm:right-8 md:right-16 bg-primary"></div>
       </div>
       <Container className="w-full py-8">
+        <div className="mb-8 block md:hidden">
+          <Dropdown defaultValue={typeBusiness} className="top-12" parentClassName="w-full h-12" data={data} setFiltered={handleTypeBusiness} />
+        </div>
         <div className="flex items-center justify-between">
           <Motion tag="h3" initialX={-50} animateX={0} duration={0.4} className="heading">
             {typeBusiness}
@@ -115,12 +111,7 @@ export const FilterButton = ({ business }: { business: BusinessesTypes | undefin
           {sectorBusiness?.map((item, index) => (
             <div key={index} className="cursor-pointer" onClick={() => setOpenModalIndex(item.slug)}>
               <Motion tag="div" initialY={30} animateY={0} duration={1} delay={index * 0.1}>
-                <Background
-                  src={"/temp-business.webp"}
-                  className="flex-col justify-end px-4 py-2 h-72 sm:h-80 filter-image sm:px-8"
-                  parentClassName="rounded-lg"
-                  isHover
-                >
+                <Background src={item.media?.[0]?.url || "/temp-business.webp"} className="flex-col justify-end px-4 py-2 h-72 sm:h-80 filter-image sm:px-8" parentClassName="rounded-lg" isHover>
                   <div className="text-light">
                     <h5 className="text-base sm:text-lg line-clamp-1">{item.title}</h5>
                     <h6 className="text-lg font-semibold sm:text-xl">{typeBusiness}</h6>
@@ -134,18 +125,12 @@ export const FilterButton = ({ business }: { business: BusinessesTypes | undefin
         <AnimatePresence>
           {openModalIndex !== null && (
             <Modal isVisible={openModalIndex !== null} onClose={() => setOpenModalIndex(null)}>
-              {filterBusiness && filterBusiness?.media.length > 0 ? (
-                <ImageSlider images={filterBusiness?.media?.map((item) => item.url)} />
-              ) : (
-                <ImageSlider images={["/temp-business.webp"]} />
-              )}
+              {filterBusiness && filterBusiness?.media.length > 0 ? <ImageSlider images={filterBusiness?.media?.map((item) => item.url)} /> : <ImageSlider images={["/temp-business.webp"]} />}
               <div className="relative w-full space-y-4 md:space-y-8">
                 <h3 className="text-xl font-medium sm:text-2xl md:text-3xl text-primary">{typeBusiness}</h3>
                 <div className="space-y-2 md:space-y-4">
                   <h4 className="text-xl font-semibold sm:text-2xl md:text-3xl text-primary">{filterBusiness?.title}</h4>
-                  <p className="h-40 overflow-y-auto text-sm leading-tight text-justify md:h-60 sm:text-base xl:text-lg scrollbar">
-                    {filterBusiness?.description}
-                  </p>
+                  <p className="h-40 overflow-y-auto text-sm leading-tight text-justify md:h-60 sm:text-base xl:text-lg scrollbar">{filterBusiness?.description}</p>
                 </div>
               </div>
             </Modal>

@@ -9,5 +9,5 @@ export const organizationalLists: organizationalTypes[] = [
   { pathImg: "/images/owner/zuhri-arifin.webp", name: "Zuhri Arifin", job: "Fabrication Supervisor" },
   { pathImg: "/images/owner/supriyanto.webp", name: "Supriyanto", job: "Machining Supervisor" },
   { pathImg: "/images/owner/dyta-fitra-rosika.webp", name: "Dyta Fitra Rosika", job: "Leader Admin" },
-  { pathImg: "/images/owner/rini-apriliani.webp", name: "Rini Apriani", job: "Safety Officer" },
+  { pathImg: "/images/owner/rini-apriani.webp", name: "Rini Apriani", job: "Safety Officer" },
 ];

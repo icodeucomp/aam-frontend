@@ -9,11 +9,12 @@ import { ResponseBusinessTypes } from "@/types";
 import { useDebounce } from "use-debounce";
 
 export const Businesses = () => {
-  const [businessSlug, setBusinessSlug] = useState<string>("civil");
+  const [businessSlug, setBusinessSlug] = useState<string>("civil-construction");
 
   const [debounceBusinessSlug] = useDebounce(businessSlug, 300);
+
   const { response: business, loading } = useGet<ResponseBusinessTypes>({
-    path: `business/${debounceBusinessSlug}`,
+    path: `/business/${debounceBusinessSlug}`,
     limit: "10",
   });
 

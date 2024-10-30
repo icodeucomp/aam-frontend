@@ -34,9 +34,7 @@ export const LanguageSwitcher = () => {
             key={index}
             disabled={isPending}
             onClick={(e) => handleChangeLanguage(e, item.title)}
-            className={`flex items-center gap-1 pl-2 text-xs sm:text-sm xl:pl-4 uppercase ${
-              localActive === item.title ? "text-light-gray font-bold" : "text-light font-medium"
-            }`}
+            className={`flex items-center gap-1 pl-2 text-xs sm:text-sm xl:pl-4 uppercase ${localActive === item.title ? "text-light-gray font-semibold" : "text-light font-medium"}`}
           >
             <Img className="size-3 md:size-5" src={item.pathIcon} alt="United Kingdom Flag" />
             {item.title}

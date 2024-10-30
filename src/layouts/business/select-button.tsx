@@ -4,7 +4,9 @@ import { useState, useEffect } from "react";
 
 import { useGet } from "@/hooks";
 
-import { Button, Container } from "@/components";
+import { Button, Container, Dropdown } from "@/components";
+
+import { formatTitleCase } from "@/utils";
 
 import { ResponseBusinessesTypes } from "@/types";
 
@@ -37,7 +39,7 @@ export const SelectButton = ({ handleFilterBusiness, businessSlug }: { handleFil
 
   return (
     <Container className="z-1">
-      <div className={`flex px-8 py-2 -mt-8 rounded-lg card-shadow bg-light ${loading ? "justify-center" : "justify-between"}`}>
+      <div className={`hidden px-8 py-2 lg:-mt-10 2xl:-mt-8 rounded-lg card-shadow lg:flex bg-light ${loading ? "justify-center" : "justify-between"}`}>
         {businessName.map((item, index) => (
           <Button
             key={index}
@@ -47,6 +49,9 @@ export const SelectButton = ({ handleFilterBusiness, businessSlug }: { handleFil
             {item.title}
           </Button>
         ))}
+      </div>
+      <div className="mt-8 block lg:hidden">
+        <Dropdown defaultValue={formatTitleCase(businessSlug)} className="top-12" parentClassName="w-full h-14" data={businessName} setFiltered={handleFilterBusiness} />
       </div>
     </Container>
   );

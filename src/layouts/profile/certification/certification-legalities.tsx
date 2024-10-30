@@ -82,12 +82,10 @@ export const CertificationLegalities = () => {
               <>
                 {documents?.data && documents?.data.length < 1 ? (
                   <div className="flex items-center justify-center h-full">
-                    <h3 className="w-full col-span-1 m-8 text-lg font-semibold text-center sm:text-2xl md:text-3xl sm:col-span-2 xl:col-span-3 text-gray/50">
-                      The document is not found
-                    </h3>
+                    <h3 className="w-full col-span-1 m-8 text-lg font-semibold text-center sm:text-2xl md:text-3xl sm:col-span-2 xl:col-span-3 text-gray/50">The document is not found</h3>
                   </div>
                 ) : (
-                  <div className="mt-8 border divide-y rounded-lg card-shadow border-gray/30 divide-gray/30">
+                  <div className="my-8 border divide-y rounded-lg card-shadow border-gray/30 divide-gray/30">
                     {documents?.data.map((item, index, row) => {
                       const lastIndex = index + 1 === row.length;
                       return (

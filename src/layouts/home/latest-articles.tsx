@@ -32,7 +32,7 @@ export const LatestArticles = () => {
   });
 
   React.useEffect(() => {
-    if (articles?.total && articles?.total > 1) {
+    if (articles?.total && articles?.total > 0) {
       setTotalPage(Math.ceil(articles.total / limit));
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps

@@ -1,10 +1,10 @@
 export interface DropdownProps {
   parentClassName: string;
   className: string;
-  dropdownKey: string;
+  defaultValue: string;
   data: {
-    display: string;
-    value: string;
+    title: string;
+    slug: string;
   }[];
-  setFiltered: (dropdownKey: string, value: string) => void;
+  setFiltered: (slug: string) => void;
 }

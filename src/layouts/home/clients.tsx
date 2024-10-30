@@ -12,9 +12,9 @@ export const Clients = () => {
   };
 
   return (
-    <Container className="flex items-center gap-8 overflow-hidden pb-16">
+    <Container className="flex items-center gap-8 overflow-hidden pb-16 flex-col lg:flex-row">
       <div className="text-3xl md:text-start md:text-4xl lg:text-5xl">
-        <Motion tag="h4" duration={0.5} initialX={-50} animateX={0} className="text-dark-gray text-nowrap">
+        <Motion tag="h4" duration={0.5} initialX={-50} animateX={0} className="text-dark-gray text-nowrap font-semibold">
           Our Clients
         </Motion>
       </div>
