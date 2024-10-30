@@ -44,12 +44,10 @@ export const CertificationLegalities = () => {
 
   const selectedCard = documents?.data.find((item) => item.slug === selectCard);
 
-  const handleSetFiltered = (dropdownKey: string, value: string) => {
+  const handleSetFiltered = (value: string) => {
     const [newSort, newOrder] = value.split("&").map((param) => param.split("=")[1]);
-    if (dropdownKey === "dropdownFilter") {
-      setSort(newSort);
-      setOrder(newOrder);
-    }
+    setSort(newSort);
+    setOrder(newOrder);
   };
 
   const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {

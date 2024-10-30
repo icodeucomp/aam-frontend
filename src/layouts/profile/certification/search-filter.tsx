@@ -2,13 +2,16 @@
 
 import * as React from "react";
 
+import { useToggleState } from "@/hooks";
+
 import Datepicker, { DateValueType } from "react-tailwindcss-datepicker";
-import { Dropdown } from "@/components";
+import { Button } from "@/components";
 
 import { CiSearch } from "react-icons/ci";
+import { PiCaretDownBold } from "react-icons/pi";
 
 interface SearchFilterProps {
-  setFiltered: (dropdownKey: string, value: string) => void;
+  setFiltered: (value: string) => void;
   setSearchTerm: (e: React.ChangeEvent<HTMLInputElement>) => void;
   date: DateValueType;
   setDate: (date: DateValueType) => void;
@@ -16,12 +19,21 @@ interface SearchFilterProps {
 }
 
 export const SearchFilter = ({ setFiltered, setSearchTerm, date, setDate, searchTerm }: SearchFilterProps) => {
+  const [ref, popover, togglePopover] = useToggleState(false);
+
+  const [display, setDisplay] = React.useState<string>("");
+
   const rightData = [
     { display: "Newest", value: "sort=uploadedAt&order=desc" },
     { display: "Oldest", value: "sort=uploadedAt&order=asc" },
     { display: "A - Z", value: "sort=name&order=asc" },
     { display: "Z - A", value: "sort=name&order=desc" },
   ];
+
+  const handleClickFiltered = (display: string, value: string) => {
+    setDisplay(display);
+    setFiltered(value);
+  };
 
   return (
     <div className="grid grid-cols-1 gap-4">
@@ -46,13 +58,19 @@ export const SearchFilter = ({ setFiltered, setSearchTerm, date, setDate, search
           useRange={false}
           onChange={(newValue) => setDate(newValue)}
         />
-        <Dropdown
-          dropdownKey="dropdownFilter"
-          parentClassName="w-full h-12"
-          className="top-10 lg:top-16"
-          data={rightData}
-          setFiltered={setFiltered}
-        />
+        <span ref={ref} className={`dropdown w-full h-12} ${popover ? "border-primary" : "border-gray"}`} onClick={togglePopover}>
+          {display}
+          <PiCaretDownBold size={20} className={`duration-300 absolute right-2 fill-dark ${popover && "rotate-180"}`} />
+          {popover && (
+            <div className={`popover top-10 lg:top-16`}>
+              {rightData.map((item, index) => (
+                <Button onClick={() => handleClickFiltered(item.display, item.value)} key={index} className="w-full whitespace-nowrap btn-primary">
+                  {item.display}
+                </Button>
+              ))}
+            </div>
+          )}
+        </span>
       </div>
     </div>
   );
