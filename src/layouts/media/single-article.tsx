@@ -103,7 +103,7 @@ export const SingleArticle = ({ slug }: { slug: string }) => {
 
               <div className="space-y-8">
                 {articles?.data.map((item, index) => (
-                  <RelatedArticles key={index} date={item.updatedAt} pathUrl={item.slug} title={item.title} pathImg={item.imageHeader} />
+                  <RelatedArticles key={index} date={item.updatedAt} pathUrl={item.slug} title={item.title} pathImg={item.header} />
                 ))}
               </div>
             </Motion>

@@ -67,7 +67,7 @@ export const LatestArticles = () => {
       ) : (
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {articles?.data.map((item, index) => (
-            <ArticleCard date={item.updatedAt} pathImg={item.imageHeader} pathUrl={item.slug} title={item.title} key={index} />
+            <ArticleCard date={item.updatedAt} pathImg={item.header} pathUrl={item.slug} title={item.title} key={index} />
           ))}
         </div>
       )}
