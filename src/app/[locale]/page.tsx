@@ -1,4 +1,6 @@
-import { LatestArticles, Clients, Hero, Messages, Services } from "@/layouts/home";
+import Image from "next/image";
+
+import { LatestArticles, Clients, Hero, Messages, Services, Projects } from "@/layouts/home";
 
 export default function Home() {
   return (
@@ -6,8 +8,12 @@ export default function Home() {
       <Hero />
       <Messages />
       <Services />
-      <LatestArticles />
-      <Clients />
+      <div className="relative">
+        <Image src="/images/house-frame-dark.webp" alt="house frame" className="absolute top-16 right-16 opacity-40" objectPosition="top" objectFit="cover" width={1000} height={1000} />
+        <Projects />
+        <LatestArticles />
+        <Clients />
+      </div>
     </section>
   );
 }

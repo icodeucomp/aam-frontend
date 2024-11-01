@@ -37,15 +37,8 @@ export const ImageSlider: React.FC<SliderProps> = ({ images }) => {
 
       {/* Image Slide */}
       <div className="relative flex">
-        <AnimatePresence initial={false}>
-          <motion.div
-            key={currentIndex}
-            className="w-full h-full"
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -100 }}
-            transition={{ duration: 0.3 }}
-          >
+        <AnimatePresence initial={false} mode="wait">
+          <motion.div key={currentIndex} className="w-full h-full" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }} transition={{ duration: 0.3 }}>
             <Img src={images[currentIndex] || "/temp-article.webp"} alt="image slider" className={`rounded-lg w-full mx-auto h-64 md:h-96`} cover />
           </motion.div>
         </AnimatePresence>

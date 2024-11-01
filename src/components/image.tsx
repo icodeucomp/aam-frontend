@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 import { ImageProps } from "@/types";
-
 import { shimmer, toBase64 } from "@/utils";
 
 export const Img = ({ src, alt, className, cover }: ImageProps) => {

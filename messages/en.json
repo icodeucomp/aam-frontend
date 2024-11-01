@@ -1,6 +1,196 @@
 {
-  "HomePage": {
-    "title": "Hello English"
+  "welcome": "Welcome",
+  "language": "English Language",
+  "view-all": "View All",
+  "home": {
+    "hero": {
+      "title": "Rely on Us to Deliver Your Project Goals from Concept to Completion",
+      "description": "We are General Supplier, Fabrication, Machining, Mechanical, Electrical, and Civil Company",
+      "button-learn-more": "Learn More",
+      "button-our-business": "Our Business"
+    },
+    "message": {
+      "welcome": "Welcome to",
+      "description": "On behalf of the Board of Directors and management of PT TRIJAYA BERKAH MANDIRI (PT TBM), we express renewed optimism in facing the global challenges of the construction industry. PT TBM is committed to continuous transformation in technology, products, and processes, with the goal of enhancing quality of life and the economy. Through solid team synergy, PT TBM remains focused on fostering collaboration between people, businesses, and strategies, and is ready to compete globally with world-class quality for a better future.",
+      "job-title": "Director"
+    },
+    "services": {
+      "one": {
+        "title": "General Supplier",
+        "description": "We provide services for supplying raw or semi-finished goods in accordance with contracts mutually agreed upon by both parties.."
+      },
+      "two": {
+        "title": "Civil & Construction",
+        "description": "We offer services for designing, constructing, and renovating infrastructure, including building structures and civil engineering works, as agreed upon by both parties."
+      },
+      "three": {
+        "title": "Fabrication",
+        "description": "We provide fabrication services that include component manufacturing, structural assembly, and custom product work as needed."
+      },
+      "four": {
+        "title": "Mechanical",
+        "description": "We provide mechanical services that include assembly, maintenance, and repair of industrial machinery and equipment."
+      },
+      "five": {
+        "title": "Engineering",
+        "description": "We offer engineering services that include the design, development, and implementation of engineering solutions for various industries."
+      },
+      "six": {
+        "title": "Electrical",
+        "description": "We provide electrical services that include installation, maintenance, and repair of electrical systems for various industrial sectors."
+      },
+      "title": "Our Dedicated Services for You",
+      "description": "We provide professional services for your business"
+    },
+    "clients": {
+      "title": "Our Clients",
+      "description": "We collaborate to engineer solutions that stand the test of time"
+    },
+    "articles": "Newsrooms"
+  },
+  "profile": {
+    "hero": {
+      "title": "Profile",
+      "description": "Discover Who We Are: Our Story, Vision, and Mission. Explore Our Organizational Structure, Legal Foundations, and Industry Certifications That Drive Our Commitment to Excellence."
+    },
+    "message": {
+      "subtitle": "We are General Supplier, Fabrication, Machining, Mechanical, Electrical, and Civil company.",
+      "description-one": "PT Trijaya Berkah Mandiri has been operating since 2015, established under Notarial Deed No.1 dated November 4, 2015. Throughout our journey, we have provided a wide range of products for both large and small-scale projects, as well as services for various works and workshops, predominantly serving the western Banten region and extending to parts of Java, Sumatra, and Kalimantan.",
+      "description-two": "As a leading General Supplier and Project provider, PT Trijaya Berkah Mandiri meets the needs of businesses in the fields of Electrical Special Panel Making, Mechanical, Engineering, Safety, and other related projects. In 2019, we expanded into the construction sector. We are dedicated to serving with utmost care and supporting our customers’ needs, whether for large or small-scale projects."
+    },
+    "vision-mission": {
+      "title": "Vision & Missions",
+      "vision": {
+        "title": "Vision",
+        "description": "Meeting the needs of the industrial sector in manufacturing production machines, we also provide high-quality fabrication and repair services for parts. This helps reduce reliance on foreign products and supports the growth of domestic production capabilities."
+      },
+      "mission": {
+        "title": "Missions",
+        "description-one": "Provide services for manufacturing machines, as well as producing and repairing high-quality production machine parts. This ensures customer satisfaction and trust, fostering strong and lasting partnerships.",
+        "description-two": "Support the government’s efforts to create jobs, reduce unemployment, and boost the national economy, contributing to the well-being of Indonesian families."
+      }
+    },
+    "organizational-structure": {
+      "title": "Organizational Structure",
+      "description": "Get to know the passionate directors and managers behind our success.",
+      "job": {
+        "director": "Director",
+        "general-manager": "General Manager",
+        "electrical-manager": "Electrical Manager",
+        "accounting-manager": "Accounting Manager",
+        "project-manager": "Project Manager",
+        "machining-supervisor": "Machining Supervisor",
+        "fabrication-supervisor": "Fabrication Supervisor",
+        "leader-admin": "Leader Admin",
+        "safety": "Safety Officer"
+      }
+    }
+  },
+  "business": {
+    "details": {
+      "title": "Services & Products Details",
+      "description": "PT. A brings a wealth of experience and expertise across various projects in General Supply, Fabrication, Machining, Mechanical, Electrical, Civil, and Construction. Supported by a dedicated and skilled team, we are prepared to tackle challenges at every stage of a project. With a focus on innovation and efficiency, we strive to deliver solutions that meet the specific needs of our clients. We take pride in building strong partnerships across various industries, delivering satisfying results, and contributing to the success of their projects.",
+      "motto-name": "Motto",
+      "motto": "Engineering Excellence, Every Step of the Way",
+      "message": "All work will be supervised under high control by a Supervisor from the initial planning, progress, to commissioning stages. A work guarantee is provided in accordance with TBM standards or as required by the client or customer.",
+      "list-one": {
+        "title": "Electrical Products",
+        "description": "Supply Cable, Electrical Tools, Panel, Contactor, Motor, Cable Tray, Lamp, Cable ties, Light poles, Fan and etc."
+      },
+      "list-two": {
+        "title": "Electrical Project",
+        "description": "Lighting rod, Cad Well, Installation Low ang High Voltage for industries, Phone or Intercom, Hall Sound System, lightning protection  PLC system and etc."
+      },
+      "list-three": {
+        "title": "Mechanical Spare part",
+        "description": "Rubber, Seal, Hose, Pipe Nipple, Injector, Pressure gauge, Sews, Bolt, Conduit  and etc."
+      },
+      "list-four": {
+        "title": "Workshop Project",
+        "description": "Hard Chrome, Sand Blasting, Teflon Coating, Nikel Chrome, Shell Structure, Thank Project, Overhaul, Piping, Molding,Separator, Vibrator, Mixing Rolls and etc."
+      },
+      "list-five": {
+        "title": "Construction",
+        "description": "Our work includes industrial building construction or industrial building repairs, installation of various types of roofing such as Spandex models, Bitumen models, partitioning, and all fabrication work."
+      },
+      "list-six": {
+        "title": "Safety",
+        "description": "Manufacturing of Fire Extinguisher Boxes, Nozzle Modification, Smoke Detectors, Hose Upgrades, Valves, Local and Imported Sprinklers, and similar services."
+      },
+      "list-seven": {
+        "title": "Manpower Supply",
+        "description": "From skilled laborers to technical experts, we offer reliable workforce solutions that align with your business needs and project timelines."
+      },
+      "list-eight": {
+        "title": "Repair & Maintenance",
+        "description": "We offer professional and reliable repair and maintenance services, providing effective and high-quality solutions to ensure the optimal performance of your equipment."
+      }
+    },
+    "experiences": {
+      "title": "Experiences",
+      "description": "We have successfully delivered high-quality services across a diverse range of industries and regions"
+    }
+  },
+  "certification": {
+    "hero": {
+      "title": "Legalities and Certifications",
+      "description": "Committed to high standards, our company holds all necessary legal compliances and certifications to guarantee the best service quality and safety in the industry."
+    }
+  },
+  "career": {
+    "hero": {
+      "title": "Career",
+      "description": "Join us at and unlock your potential, working with a passionate team and making a real difference in the world. We eagerly look forward to your arrival!"
+    },
+    "head": {
+      "title": "Professinal Staff and Internship",
+      "description": "We have several job and internship vacancies open"
+    },
+    "one": {
+      "title": "Professional Staff",
+      "description": "We are seeking talented individuals to contribute to innovative projects. If you're passionate and eager to grow in a dynamic environment, we want to hear from you!",
+      "button-text": "See Vacancy"
+    },
+    "two": {
+      "title": "Internship Program",
+      "description": "Join our internship program to gain practical skills and industry insights. Work alongside experts and expand your professional network!",
+      "button-text": "Apply"
+    }
+  },
+  "contact-us": {
+    "hero": {
+      "title": "Contact Us",
+      "description": "We're Here to Help: Reach Out for Any Support, Business Inquiries, or Collaboration Opportunities. Let's Work Together to Build Strong Connections."
+    },
+    "head": {
+      "title": "Let's Talk with Us",
+      "description": "Reach out to our services and let's collaborate together"
+    },
+    "left-side": {
+      "title": "You can reach us at",
+      "button-text": "Contact us Through Whatsapp"
+    },
+    "right-side": {
+      "title": "Questions, comments, or suggestions?",
+      "description": "Simply fill in the form and we`ll be in touch shortly",
+      "button-text": "Send Message"
+    }
+  },
+  "media": {
+    "hero": {
+      "title": "Media",
+      "description": "Explore our entire experience and activities with our work documentation, articles, and latest news."
+    },
+    "head": {
+      "title": "Company Gallery",
+      "description": "Our Work in Action: Projects Activities and Articles"
+    },
+    "project-activities": "Project Activities",
+    "articles-gallery": "Articles Gallery",
+    "latest-articles": "Latest Articles",
+    "more-articles": "More Articles",
+    "share-articles": "Share this article",
+    "other-articles": "Other Articles"
   },
   "header": {
     "home": "Home",
@@ -24,33 +214,21 @@
       }
     },
     "business": {
-      "title": "Business",
-      "services": {
-        "title": "Services",
-        "description": "Discover the services we offer to support various industry needs."
-      },
-      "products": {
-        "title": "Products",
-        "description": "Explore the innovative products we develop for optimal solutions for our customers."
-      },
-      "experiences": {
-        "title": "Experiences",
-        "description": "Learn about our experience in previous projects and the successes we have achieved."
-      },
-      "business-sector": {
-        "title": "Business Sector",
-        "description": "Get to know the business sectors we serve, including General Supplier, Fabrication, Piping Project, Machining, Mechanical, Electrical, Civil, and Construction."
-      }
+      "title": "Business"
     },
     "media": {
       "title": "Media",
-      "company-activities": {
-        "title": "Company Activities",
+      "projects-gallery": {
+        "title": "Projects Gallery",
         "description": "Find the latest information about various company activities in our project execution."
       },
-      "articles": {
+      "albums": {
+        "title": "#LifeatTBM",
+        "description": "#LifeatTBM captures the spirit of TBM through photos that showcase our team's dedication, collaboration, and daily moments that make work life memorable."
+      },
+      "articles-gallery": {
         "title": "Articles",
-        "description": " Read informative articles and the latest news about us, as well as relevant industry trends and innovations."
+        "description": "Read informative articles and the latest news about us, as well as relevant industry trends and innovations."
       }
     },
     "career": {
@@ -89,8 +267,9 @@
     "media": {
       "title": "Media",
       "fields": {
-        "one": "Blogs & Articles",
-        "two": "Gallery"
+        "one": "Projects Gallery",
+        "two": "#LifeatTBM",
+        "three": "Articles Gallery"
       }
     },
     "contact-us": {

@@ -125,12 +125,14 @@ export const FilterButton = ({ business }: { business: BusinessesTypes | undefin
         <AnimatePresence>
           {openModalIndex !== null && (
             <Modal isVisible={openModalIndex !== null} onClose={() => setOpenModalIndex(null)}>
-              {filterBusiness && filterBusiness?.media.length > 0 ? <ImageSlider images={filterBusiness?.media?.map((item) => item.url)} /> : <ImageSlider images={["/temp-business.webp"]} />}
-              <div className="relative w-full space-y-4 md:space-y-8">
-                <h3 className="text-xl font-medium sm:text-2xl md:text-3xl text-primary">{typeBusiness}</h3>
-                <div className="space-y-2 md:space-y-4">
-                  <h4 className="text-xl font-semibold sm:text-2xl md:text-3xl text-primary">{filterBusiness?.title}</h4>
-                  <p className="h-40 overflow-y-auto text-sm leading-tight text-justify md:h-60 sm:text-base xl:text-lg scrollbar">{filterBusiness?.description}</p>
+              <div className="flex flex-col gap-4 md:gap-8 md:flex-row">
+                {filterBusiness && filterBusiness?.media.length > 0 ? <ImageSlider images={filterBusiness?.media?.map((item) => item.url)} /> : <ImageSlider images={["/temp-business.webp"]} />}
+                <div className="relative w-full space-y-4 md:space-y-8">
+                  <h3 className="text-xl font-medium sm:text-2xl md:text-3xl text-primary">{typeBusiness}</h3>
+                  <div className="space-y-2 md:space-y-4">
+                    <h4 className="text-xl font-semibold sm:text-2xl md:text-3xl text-primary">{filterBusiness?.title}</h4>
+                    <p className="h-40 overflow-y-auto text-sm leading-tight text-justify md:h-60 sm:text-base xl:text-lg scrollbar">{filterBusiness?.description}</p>
+                  </div>
                 </div>
               </div>
             </Modal>

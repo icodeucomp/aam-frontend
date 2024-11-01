@@ -40,6 +40,7 @@ export interface BusinessSectorTypes {
     url: string;
     slug: string;
   }[];
+  businessId: number;
   business: {
     title: string;
   };
@@ -60,12 +61,22 @@ export interface BusinessesTypes {
   };
   Product: BusinessSectorTypes[];
   Project: BusinessSectorTypes[];
+  Service: BusinessSectorTypes[];
 }
 
 export interface MediaTypes {
   name: string;
   slug: string;
   url: string;
+  size?: string;
+}
+
+export interface AlbumTypes {
+  updatedAt: string;
+  name: string;
+  slug: string;
+  header: string;
+  medias: MediaTypes[];
 }
 
 export interface DocumentsTypes {
@@ -82,6 +93,18 @@ export interface CategoriesDocumentTypes {
   category: string;
 }
 
+export interface SearchData {
+  title: string;
+  name: string;
+  feature: string;
+  slug: string;
+  media: {
+    url: string;
+  }[];
+  header: string | { url: string };
+  business: string;
+}
+
 export type ResponseContactUs = ResponsePayload<ContactUsTypes>;
 
 export type ResponseArticlesTypes = ResponsePayload<ArticlesTypes[]>;
@@ -94,9 +117,13 @@ export type ResponseBusinessesSectorTypes = ResponsePayload<BusinessSectorTypes[
 export type ResponseBusinessSectorTypes = ResponsePayload<BusinessSectorTypes>;
 
 export type ResponseMediaTypes = ResponsePayload<MediaTypes[]>;
+export type ResponseAlbumsTypes = ResponsePayload<AlbumTypes[]>;
+export type ResponseAlbumTypes = ResponsePayload<AlbumTypes>;
 
 export type ResponseDocumentsTypes = ResponsePayload<DocumentsTypes[]>;
 export type ResponseCategoriesDocumentTypes = ResponsePayload<CategoriesDocumentTypes[]>;
 export type ResponseDocumentTypes = ResponsePayload<DocumentsTypes>;
 
 export type ResponseUserTypes = ResponsePayload<UserTypes>;
+
+export type ResponseSearchData = ResponsePayload<SearchData[]>;

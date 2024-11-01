@@ -44,12 +44,10 @@ export const Pagination = ({ setPage, page, totalPage, isNumber = false, color }
   };
 
   return (
-    <div className="flex items-center justify-center gap-2">
+    <div className="flex items-center justify-center gap-1 sm:gap-2">
       {/* Previous button */}
       <button
-        className={`size-10 sm:size-12 md:size-14 flex items-center justify-center border rounded-lg bg-light duration-300 group ${
-          page === 1 ? "border-gray" : `border-${color} hover:bg-${color}`
-        }`}
+        className={`size-10 sm:size-12 md:size-14 flex items-center justify-center border rounded-lg bg-light duration-300 group ${page === 1 ? "border-gray" : `border-${color} hover:bg-${color}`}`}
         type="button"
         onClick={handlePreviousPage}
         disabled={page === 1}
@@ -61,16 +59,11 @@ export const Pagination = ({ setPage, page, totalPage, isNumber = false, color }
       {isNumber &&
         getPageNumbers().map((numberPage, index) =>
           typeof numberPage === "number" ? (
-            <button
-              key={index}
-              type="button"
-              onClick={() => setPage(numberPage)}
-              className={`pagination-number ${numberPage === page ? `bg-${color} text-light` : "bg-light text-dark-blue"}`}
-            >
+            <button key={index} type="button" onClick={() => setPage(numberPage)} className={`pagination-number ${numberPage === page ? `bg-${color} text-light` : "bg-light text-dark-blue"}`}>
               {numberPage}
             </button>
           ) : (
-            <span key={index} className="p-1.5 text-3xl">
+            <span key={index} className="p-0 sm:p-1 text-3xl">
               {numberPage}
             </span>
           )

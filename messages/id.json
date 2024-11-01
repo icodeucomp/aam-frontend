@@ -1,6 +1,196 @@
 {
-  "HomePage": {
-    "title": "Hello Indonesia"
+  "welcome": "Selamat Datang",
+  "language": "Bahasa Indonesia",
+  "view-all": "Lihat Semuanya",
+  "home": {
+    "hero": {
+      "title": "Percayakan kepada Kami untuk Mencapai Tujuan Proyek Anda dari Konsep hingga Penyelesaian",
+      "description": "Kami adalah General Supplier, Fabrikasi, Permesinan, Mekanikal, Elektrikal, Kontraktor, dan Perusahaan Sipil",
+      "button-learn-more": "Pelajari Lebih Lanjut",
+      "button-our-business": "Bisnis kami"
+    },
+    "message": {
+      "welcome": "Selamat datang di",
+      "description": "Atas nama Direksi dan manajemen PT TRIJAYA BERKAH MANDIRI (PT TBM), kami menyampaikan optimisme baru dalam menghadapi tantangan konstruksi industri global. \nPT.TBM berkomitmen untuk melakukan transformasi berkelanjutan dalam teknologi, produk, dan proses, dengan tujuan meningkatkan kualitas hidup dan perekonomian. \nMelalui sinergi tim yang solid, PT.TBM terus fokus pada kolaborasi antara manusia, usaha, dan strategi, serta siap bersaing secara global dengan kualitas kelas dunia demi masa depan yang lebih baik.",
+      "job-title": "Direktur"
+    },
+    "services": {
+      "one": {
+        "title": "Pemasok Umum",
+        "description": "Kami melayani pemesanan pengumpulan produk mentah atau setengah jadi dan menyediakan layanan berkualitas untuk memenuhi kebutuhan bisnis."
+      },
+      "two": {
+        "title": "Sipil & Konstruksi",
+        "description": "Kami melayani pemesanan konstruksi proyek skala besar dan kecil Dengan tim ahli dan pengalaman yang mendalam, kami menjamin kualitas dalam setiap tahap pembangunan."
+      },
+      "three": {
+        "title": "Fabrikasi",
+        "description": "Kami menyediakan layanan fabrikasi yang mencakup pembuatan komponen, perakitan struktur, serta pengerjaan produk custom sesuai kebutuhan."
+      },
+      "four": {
+        "title": "Mekanik",
+        "description": "Kami menyediakan layanan di bidang mechanical yang meliputi perakitan, perawatan, dan reparasi mesin serta peralatan industri."
+      },
+      "five": {
+        "title": "Teknik",
+        "description": "Kami menawarkan layanan engineering yang mencakup desain, pengembangan, dan implementasi solusi teknik untuk berbagai industri."
+      },
+      "six": {
+        "title": "Kelistrikan",
+        "description": "Kami menyediakan layanan electrical yang meliputi instalasi, perawatan, dan perbaikan sistem kelistrikan untuk berbagai sektor industri."
+      },
+      "title": "Layanan Khusus Kami untuk Anda",
+      "description": "Kami menyediakan layanan profesional untuk bisnis Anda"
+    },
+    "clients": {
+      "title": "Klien kami",
+      "description": "Kami berkolaborasi untuk menciptakan solusi inovatif yang dirancang untuk keberlanjutan dan dapat diandalkan dalam berbagai tantangan industri."
+    },
+    "articles": "Pusat Informasi"
+  },
+  "profile": {
+    "hero": {
+      "title": "Profil",
+      "description": "Temukan Siapa Kami: Kisah, Visi, dan Misi Kami. \nJelajahi Struktur Organisasi, Landasan Hukum, dan Sertifikasi Industri Kami yang Mendorong Komitmen Kami terhadap Keunggulan."
+    },
+    "message": {
+      "subtitle": "Kami adalah perusahaan General Supplier, Fabrikasi, Permesinan, Mekanikal, Elektrikal, dan Sipil.",
+      "description-one": "PT Trijaya Berkah Mandiri telah berjalan sejak tahun 2015 dengan Akta Pendirian Notaris No.1 tanggal 4 November 2015. Selama perjalanan, kami telah banyak melayani produksi produk baik dalam skala besar maupun kecil, begitu juga proyek, pekerjaan, bengkel, dan hampir \nsebagian besar mendominasi daerah Banten barat hingga sebagian wilayah Jawa, Sumatera dan Kalimantan.",
+      "description-two": "PT.Trijaya Berkah Mandiri sebagai salah satu General Supplier dan Project hadir memenuhi kebutuhan para pebisnis yang fokus bergerak dalam bidang Electrical Spesial Panel Maker, Mechanical, Engineering, Safety dan Project lainnya. \nDan pada tahun 2019 kami mulai bergerak di bidang Kontruksi.Kami melayani dengan sepenuh hati dan mensupport sesuai dengan kebutuhan pelanggan baik skala besar maupun kecil."
+    },
+    "vision-mission": {
+      "title": "Visi",
+      "vision": {
+        "title": "Visi",
+        "description": "Memenuhi kebutuhan sektor industri dalam hal pembuatan mesin-mesin produksi, serta menyediakan jasa pembuatan dan perbaikan part berkualitas yang baik, sehingga dapat mengurangi ketergantungan terhadap produk-produk luar negeri dan menjadi produsen di negara sendiri"
+      },
+      "mission": {
+        "title": "Misi",
+        "description-one": "Memberikan pembuatan mesin maupun jasa pembuatan part hingga perbaikan sparepart mesin produksi dengan kualitas yang baik sehingga memberikan rasa kepuasan dan kepercayaan dari pelanggan sehingga dapat terjalin kerjasama yang baik",
+        "description-two": "Membantu pemerintah dalam menciptakan lapangan kerja guna mengurangi kemiskinan dan meningkatkan perekonomian dalam negeri serta mensejahterakan keluarga Indonesia"
+      }
+    },
+    "organizational-structure": {
+      "title": "Struktur Organisasi",
+      "description": "Berikut adalah sosok yang menjadi pilar utama kesuksesan kami.",
+      "job": {
+        "director": "Director",
+        "general-manager": "General Manager",
+        "electrical-manager": "Electrical Manager",
+        "accounting-manager": "Accounting Manager",
+        "project-manager": "Project Manager",
+        "machining-supervisor": "Machining Supervisor",
+        "fabrication-supervisor": "Fabrication Supervisor",
+        "leader-admin": "Leader Admin",
+        "safety": "Safety Officer"
+      }
+    }
+  },
+  "business": {
+    "details": {
+      "title": "Layanan",
+      "description": "PT. Trijaya Berkah Mandiri memiliki pengalaman yang kaya dan mendalam dalam berbagai proyek di bidang General Supplier, Fabrication, Machining, Mechanical, Electrical, Civil, dan Construction. Kami didukung oleh tim profesional yang kompeten dan berdedikasi, siap menghadapi tantangan di setiap tahap proyek. Dengan pendekatan yang berorientasi pada inovasi dan efisiensi, kami selalu berusaha memberikan solusi yang memenuhi kebutuhan spesifik klien kami. Kami bangga menjalin kemitraan yang kuat dengan berbagai industri, memberikan hasil yang memuaskan, dan berkontribusi pada kesuksesan proyek-proyek mereka.",
+      "motto-name": "Motto",
+      "motto": "Engineering Excellence, Every Step of the Way",
+      "message": "Semua pekerjaan akan diawasi di bawah kendali tinggi oleh seorang Supervisor mulai dari tahap perencanaan awal, pengerjaan, hingga commissioning. \nJaminan pekerjaan diberikan sesuai dengan standar TBM atau sesuai kebutuhan klien atau pelanggan.",
+      "list-one": {
+        "title": "Produk Listrik",
+        "description": "Supply Kabel, Alat Listrik, Panel, Kontaktor, Motor, Cable Tray, Lampu, Pengikat Kabel, Tiang Lampu, Kipas Angin dan lain-lain."
+      },
+      "list-two": {
+        "title": "Proyek Listrik",
+        "description": "Batang penerangan, Sumur Cad, Instalasi Tegangan Rendah dan Tinggi untuk industri, Telepon atau Interkom, Hall Sound System, sistem PLC penangkal petir dan lain-lain."
+      },
+      "list-three": {
+        "title": "Suku Cadang Mekanik",
+        "description": "Karet, Segel, Selang, Puting Pipa, Injektor, Pengukur Tekanan, Jahitan, Baut, Saluran dan lain-lain."
+      },
+      "list-four": {
+        "title": "Proyek Workshop",
+        "description": "Krom Keras, Peledakan Pasir, Pelapis Teflon, Krom Nikel, Struktur Cangkang, Proyek Terima Kasih, Perombakan, Perpipaan, Pencetakan, Pemisah, Penggetar, Gulungan Pencampur, dan lain-lain."
+      },
+      "list-five": {
+        "title": "Konstruksi",
+        "description": "Pekerjaan kami meliputi pembangunan gedung industri atau perbaikan gedung industri, pemasangan berbagai jenis atap seperti model Spandex, model Bitumen, partisi, dan segala pekerjaan fabrikasi."
+      },
+      "list-six": {
+        "title": "Keamanan",
+        "description": "Pembuatan Box Pemadam Kebakaran, Modifikasi Nozzle, Detektor Asap, Upgrade Selang, Valve, Alat Penyiram Lokal dan Impor, dan jasa sejenisnya."
+      },
+      "list-seven": {
+        "title": "Persediaan Tenaga Kerja",
+        "description": "Dari pekerja terampil hingga ahli teknis, kami menawarkan solusi tenaga kerja yang dapat diandalkan yang sesuai dengan kebutuhan bisnis dan jadwal proyek Anda."
+      },
+      "list-eight": {
+        "title": "Perbaikan & Pemeliharaan",
+        "description": "Kami menawarkan layanan perbaikan dan pemeliharaan yang profesional dan andal, memberikan solusi yang efektif dan berkualitas tinggi untuk memastikan kinerja peralatan Anda yang optimal."
+      }
+    },
+    "experiences": {
+      "title": "Pengalaman",
+      "description": "Kami telah berhasil memberikan layanan berkualitas tinggi di beragam industri dan wilayah"
+    }
+  },
+  "certification": {
+    "hero": {
+      "title": "Legalitas dan Sertifikasi",
+      "description": "Kami berkomitmen pada standar tinggi dengan memastikan semua kepatuhan hukum dan sertifikasi yang diperlukan, menjamin kualitas dan keamanan layanan terbaik di industri."
+    }
+  },
+  "career": {
+    "hero": {
+      "title": "Karier",
+      "description": "Bergabunglah dengan kami dan buka potensi Anda! Bekerja bersama tim yang penuh semangat untuk menciptakan perbedaan yang nyata. \nKami sangat menantikan kontribusi Anda!"
+    },
+    "head": {
+      "title": "Staf Professinal dan Magang",
+      "description": "Kami membuka beberapa lowongan kerja dan magang"
+    },
+    "one": {
+      "title": "Staf Profesional",
+      "description": "Kami mencari individu berbakat untuk berkontribusi pada proyek inovatif. Jika Anda bersemangat dan ingin berkembang di lingkungan dinamis, kami ingin mendengarnya dari Anda!",
+      "button-text": "Lihat Lowongan"
+    },
+    "two": {
+      "title": "Program Magang",
+      "description": "Bergabunglah dengan program magang kami untuk mendapatkan keterampilan praktis dan wawasan industri. Bekerja bersama ahli dan perluas jaringan profesional Anda!",
+      "button-text": "Lamar"
+    }
+  },
+  "contact-us": {
+    "hero": {
+      "title": "Hubungi kami",
+      "description": "Kami Siap Membantu: Hubungi Dukungan, Pertanyaan Bisnis, atau Peluang Kolaborasi. \nMari Bekerja Sama untuk Membangun Koneksi yang Kuat."
+    },
+    "head": {
+      "title": "Mari Bicara dengan Kami",
+      "description": "Jangkau layanan kami dan mari berkolaborasi bersama"
+    },
+    "left-side": {
+      "title": "Anda dapat menghubungi kami di",
+      "button-text": "Hubungi kami Melalui Whatsapp"
+    },
+    "right-side": {
+      "title": "Pertanyaan, komentar, atau saran?",
+      "description": "Cukup isi formulir dan kami akan segera menghubungi Anda",
+      "button-text": "Kirim Pesan"
+    }
+  },
+  "media": {
+    "hero": {
+      "title": "Media",
+      "description": "Jelajahi seluruh pengalaman dan aktivitas kami dengan dokumentasi pekerjaan, artikel, dan kabar terkini kami"
+    },
+    "head": {
+      "title": "Galeri Perusahaan",
+      "description": "Pekerjaan Kami dalam Tindakan: Kegiatan Proyek dan Artikel"
+    },
+    "project-activities": "Kegiatan Proyek",
+    "articles-gallery": "Galeri Artikel",
+    "latest-articles": "Artikel Terakhir",
+    "more-articles": "Artikel Lainnya",
+    "share-articles": "Bagikan artikel ini",
+    "other-articles": "Artikel Lainnya"
   },
   "header": {
     "home": "Beranda",
@@ -24,33 +214,21 @@
       }
     },
     "business": {
-      "title": "Bisnis",
-      "services": {
-        "title": "Layanan",
-        "description": "Temukan layanan yang kami tawarkan untuk mendukung berbagai kebutuhan industri."
-      },
-      "products": {
-        "title": "Produk",
-        "description": "Jelajahi berbagai produk inovatif yang kami kembangkan untuk solusi terbaik bagi pelanggan."
-      },
-      "experiences": {
-        "title": "Pengalaman",
-        "description": "Pelajari tentang pengalaman kami dalam proyek-proyek sebelumnya dan keberhasilan yang telah kami capai."
-      },
-      "business-sector": {
-        "title": "Sektor Bisnis",
-        "description": "Kenali sektor-sektor bisnis yang kami layani, termasuk General Supplier, Fabrication, Piping Project, Machining, Mechanical, Electrical, Civil, dan Construction."
-      }
+      "title": "Bisnis"
     },
     "media": {
       "title": "Media",
-      "company-activities": {
-        "title": "Kegiatan Perusahaan",
-        "description": "Temukan informasi terkini tentang berbagai kegiatan perusahaan dalam pengerjaan proyek kami."
+      "projects-gallery": {
+        "title": "Galeri Proyek",
+        "description": "Find the latest information about various company activities in our project execution."
       },
-      "articles": {
-        "title": "Artikel",
-        "description": "Baca artikel informatif dan berita terkini mengenai kami, dan industri, inovasi, dan tren yang relevan."
+      "albums": {
+        "title": "#LifeatTBM",
+        "description": "#LifeatTBM menangkap semangat TBM melalui foto-foto yang menunjukkan dedikasi, kolaborasi, dan momen-momen harian yang membuat kehidupan kerja berkesan."
+      },
+      "articles-gallery": {
+        "title": "Galeri Artikel",
+        "description": " Read informative articles and the latest news about us, as well as relevant industry trends and innovations."
       }
     },
     "contact-us": "Hubungi kami",
@@ -89,8 +267,9 @@
     "media": {
       "title": "Media",
       "fields": {
-        "one": "blog",
-        "two": "Galeri"
+        "one": "Galeri Proyek",
+        "two": "#LifeatTBM",
+        "three": "Galeri Artikel"
       }
     },
     "contact-us": {

@@ -21,7 +21,7 @@ export const VisionMission = () => {
         </div>
 
         {/* Missions Section */}
-        <div className="min-h-500 lg:min-h-full lg:col-span-3 sm:p-8 lg:p-0">
+        <div className="min-h-500 lg:min-h-full lg:col-span-3 pt-12 sm:p-8 lg:p-0">
           <h2 className="mb-8 md:mb-10 text-3xl sm:text-4xl font-semibold">{visionMissionLists.mission.title}</h2>
           <ul className="space-y-2">
             {visionMissionLists.mission.description.map((item, index) => (

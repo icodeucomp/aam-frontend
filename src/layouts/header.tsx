@@ -8,8 +8,6 @@ import { useToggleState } from "@/hooks";
 
 import { Button, Img, LanguageSwitcher, Navbar } from "@/components";
 
-import { IoMdClose, IoMdMenu } from "react-icons/io";
-
 export const Header = () => {
   const [ref, navbar, toggleNavbar] = useToggleState(false);
 
@@ -35,7 +33,7 @@ export const Header = () => {
 
   return (
     <header ref={ref} className="w-full z-1000">
-      <div className="bg-primary">
+      <div className="hidden bg-primary lg:block">
         <div className="flex justify-end max-w-screen-xl px-4 py-2 mx-auto sm:py-3 sm:px-8">
           <LanguageSwitcher />
         </div>
@@ -46,14 +44,18 @@ export const Header = () => {
             <Img className="h-14 min-w-28 max-w-28" src="/logo-company.png" alt="logo PT Amanah Aulia Mandiri" />
           </Link>
 
-          <Navbar navbar={navbar} />
+          <Navbar navbar={navbar} toggleNavbar={toggleNavbar} />
 
           <div className="hidden lg:block">
             <Button className="shadow-lg btn-secondary">Get Our Company Profile</Button>
           </div>
 
           <div className="block lg:hidden">
-            <button onClick={toggleNavbar}>{navbar ? <IoMdClose size={32} className="fill-primary" /> : <IoMdMenu size={32} className="fill-primary" />}</button>
+            <button onClick={toggleNavbar} className={`relative flex flex-col justify-center overflow-hidden items-center p-2 ${navbar ? "space-y-1" : "space-y-1.5"}`}>
+              <span className={`block h-1 w-10 rounded-full bg-primary transition-transform ease-in-out ${navbar ? "translate-y-2 rotate-45" : ""}`}></span>
+              <span className={`block h-1 w-8 rounded-full bg-primary duration-200 ${navbar && "translate-x-16"}`}></span>
+              <span className={`block h-1 w-10 rounded-full bg-primary transition-transform ease-in-out ${navbar ? "-translate-y-2 -rotate-45" : ""}`}></span>
+            </button>
           </div>
         </div>
       </div>

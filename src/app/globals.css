@@ -132,8 +132,17 @@
   .btn-cross-border {
     @apply absolute duration-300 right-4 top-4 flex justify-center items-center rounded-full border-primary border-2 size-8 hover:bg-primary;
   }
+  .btn-back {
+    @apply flex items-center justify-center duration-300 border rounded-lg size-10 sm:size-12 bg-light border-secondary hover:bg-secondary;
+  }
+  .navbar-submenu {
+    @apply absolute left-0 w-full shadow-lg bg-light-gray h-80 top-20 z-1000 opacity-0 transition-all duration-300 ease-in-out pointer-events-none;
+  }
   .filter {
     @apply bg-gradient-to-b from-dark/80 to-dark/50;
+  }
+  .filter-image {
+    @apply bg-gradient-to-b from-dark/50 via-dark-blue/20 to-dark/50;
   }
   .heading {
     @apply text-2xl font-semibold sm:text-3xl lg:text-4xl text-dark-blue;

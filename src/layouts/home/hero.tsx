@@ -4,11 +4,7 @@ import { Link } from "@/i18n/routing";
 
 export const Hero = () => {
   return (
-    <Background
-      src="/home-header.webp"
-      className="items-center max-w-screen-xl px-4 sm:px-8 min-h-500 lg:min-h-custom-header"
-      parentClassName="filter"
-    >
+    <Background src="/home-header.webp" className="items-center max-w-screen-xl px-4 sm:px-8 min-h-500 lg:min-h-custom-header-home" parentClassName="filter">
       <div className="max-w-screen-lg space-y-4">
         <Motion tag="h1" initialX={-50} animateX={0} duration={0.3} className="text-3xl font-semibold leading-snug md:text-4xl lg:text-5xl">
           Trust Us to Elevate Your Experience with Unmatched Quality, Timely Deliveries, and Customer-Centric Solutions

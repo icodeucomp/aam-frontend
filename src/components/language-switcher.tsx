@@ -27,7 +27,7 @@ export const LanguageSwitcher = () => {
   };
 
   return (
-    <div className="flex gap-2 divide-x xl:gap-4 divide-primary">
+    <div className="flex gap-2 divide-x xl:gap-4 divide-primary z-10000">
       {languages.map((item, index) => {
         return (
           <button

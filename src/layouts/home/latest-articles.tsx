@@ -50,7 +50,7 @@ export const LatestArticles = () => {
   }, [debouncedIsDesktop, debouncedIsTablet, debouncedIsMobile]);
 
   return (
-    <Container className="w-full py-20 space-y-8">
+    <Container className="w-full py-16 space-y-8">
       <div className="flex items-center justify-between">
         <Motion tag="h3" initialX={-50} animateX={0} duration={0.4} className="heading">
           Latest News
@@ -61,7 +61,7 @@ export const LatestArticles = () => {
       </div>
 
       {loading ? (
-        <div className="flex justify-center w-full py-16">
+        <div className="flex justify-center w-full py-16 min-h-500">
           <div className="loader"></div>
         </div>
       ) : (

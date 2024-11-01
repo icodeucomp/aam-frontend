@@ -18,7 +18,7 @@ export const Background = ({ src, className, children, parentClassName, isHover 
         objectPosition="center"
         className={`-z-10 ${isHover ? "duration-300 group-hover:scale-110" : ""}`}
       />
-      <div className={`z-1 flex w-full mx-auto ${className ?? ""}`}>{children}</div>
+      <div className={`z-1 flex mx-auto ${className ?? ""}`}>{children}</div>
     </figure>
   );
 };

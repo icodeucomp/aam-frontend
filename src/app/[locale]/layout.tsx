@@ -16,6 +16,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Amanah Aulia Mandiri",
   description: "This is official website from Amanah Aulia Mandiri",
+  icons: {
+    icon: "/logo-company.png",
+  },
 };
 
 export default async function RootLayout({ children, params: { locale } }: { children: React.ReactNode; params: { locale: string } }) {

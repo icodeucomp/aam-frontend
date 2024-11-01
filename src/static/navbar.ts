@@ -1,5 +1,6 @@
-import { NavbarPropsAndTypes } from "@/types";
 import { useTranslations } from "next-intl";
+
+import { NavbarPropsAndTypes } from "@/types";
 
 export const NavbarLists = () => {
   const t = useTranslations("header");
@@ -23,27 +24,18 @@ export const NavbarLists = () => {
     {
       title: `${t("business.title")}`,
       pathUrl: "/business",
-      content: [
-        { title: `${t("business.services.title")}`, pathUrl: "#service", description: `${t("business.services.description")}` },
-        { title: `${t("business.products.title")}`, pathUrl: "#product", description: `${t("business.products.description")}` },
-        { title: `${t("business.experiences.title")}`, pathUrl: "#experience", description: `${t("business.experiences.description")}` },
-        {
-          title: `${t("business.business-sector.title")}`,
-          pathUrl: "/sector",
-          description: `${t("business.business-sector.description")}`,
-        },
-      ],
     },
     {
       title: `${t("media.title")}`,
       pathUrl: "/media",
       content: [
         {
-          title: `${t("media.company-activities.title")}`,
-          pathUrl: "#company-activity",
-          description: `${t("media.company-activities.description")}`,
+          title: `${t("media.projects-gallery.title")}`,
+          pathUrl: "#projects-gallery",
+          description: `${t("media.projects-gallery.description")}`,
         },
-        { title: `${t("media.articles.title")}`, pathUrl: "#article", description: `${t("media.articles.description")}` },
+        { title: `${t("media.albums.title")}`, pathUrl: "#lifeattbm", description: `${t("media.albums.description")}` },
+        { title: `${t("media.articles-gallery.title")}`, pathUrl: "#articles-gallery", description: `${t("media.articles-gallery.description")}` },
       ],
     },
     { title: `${t("contact-us")}`, pathUrl: "/contact-us" },

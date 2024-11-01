@@ -12,3 +12,4 @@ export * from "./modal";
 export * from "./image-slider";
 export * from "./dropdown";
 export * from "./breadcrumb";
+export * from "./slider";

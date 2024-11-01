@@ -7,6 +7,7 @@ export * from "./article-card";
 export * from "./modal";
 export * from "./dropdown";
 export * from "./breadcrumb";
+export * from "./slider";
 
 export * from "./navbar";
 export * from "./language";
