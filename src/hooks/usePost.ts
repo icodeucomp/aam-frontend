@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 
-import { useRouter } from "next/navigation";
-
 import { useCookies } from "next-client-cookies";
 
 import toast from "react-hot-toast";
@@ -13,8 +11,6 @@ import { request } from "@/utils";
 export const usePost = (method: "GET" | "POST" | "PATCH" | "DELETE", linkHref?: string) => {
   const [loading, setLoading] = useState<boolean>();
   const [error, setError] = useState<string>();
-
-  const { push } = useRouter();
 
   const cookies = useCookies();
 
@@ -34,7 +30,7 @@ export const usePost = (method: "GET" | "POST" | "PATCH" | "DELETE", linkHref?: 
       .then((response) => {
         toast.success(response?.data.message);
         if (linkHref) {
-          push(`/admin/dashboard/${linkHref}`);
+          window.location.href = `/admin/dashboard/${linkHref}`;
           return;
         }
       })

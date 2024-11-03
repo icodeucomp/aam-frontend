@@ -33,6 +33,7 @@ export const LatestArticles = () => {
     path: "/blogs",
     page: debouncedPage.toString(),
     limit: limit.toString(),
+    order: "desc",
   });
 
   React.useEffect(() => {
