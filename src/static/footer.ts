@@ -17,11 +17,6 @@ export const FooterLists = () => {
       ],
     },
     {
-      title: `${t("business.title")}`,
-      pathUrl: "/business",
-      content: [],
-    },
-    {
       title: `${t("media.title")}`,
       pathUrl: "/media",
       content: [

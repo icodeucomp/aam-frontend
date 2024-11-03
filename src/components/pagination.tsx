@@ -47,12 +47,12 @@ export const Pagination = ({ setPage, page, totalPage, isNumber = false, color }
     <div className="flex items-center justify-center gap-1 sm:gap-2">
       {/* Previous button */}
       <button
-        className={`size-10 sm:size-12 md:size-14 flex items-center justify-center border rounded-lg bg-light duration-300 group ${page === 1 ? "border-gray" : `border-${color} hover:bg-${color}`}`}
+        className={`size-10 sm:size-12 flex items-center justify-center border rounded-lg bg-light duration-300 group ${page === 1 ? "border-gray" : `border-${color} hover:bg-${color}`}`}
         type="button"
         onClick={handlePreviousPage}
         disabled={page === 1}
       >
-        <PiCaretLeftThin size={26} className={`duration-300 ${page === 1 ? "fill-gray" : `fill-${color} group-hover:fill-light`}`} />
+        <PiCaretLeftThin size={24} className={`duration-300 ${page === 1 ? "fill-gray" : `fill-${color} group-hover:fill-light`}`} />
       </button>
 
       {/* Pagination with ellipses */}
@@ -71,14 +71,12 @@ export const Pagination = ({ setPage, page, totalPage, isNumber = false, color }
 
       {/* Next button */}
       <button
-        className={`size-10 sm:size-12 md:size-14 flex items-center justify-center border rounded-lg bg-light duration-300 group ${
-          page === totalPage ? "border-gray" : `border-${color} hover:bg-${color}`
-        }`}
+        className={`size-10 sm:size-12 flex items-center justify-center border rounded-lg bg-light duration-300 group ${page === totalPage ? "border-gray" : `border-${color} hover:bg-${color}`}`}
         type="button"
         onClick={handleNextPage}
         disabled={page === totalPage}
       >
-        <PiCaretRightThin size={26} className={`duration-300 ${page === totalPage ? "fill-gray" : `fill-${color} group-hover:fill-light`}`} />
+        <PiCaretRightThin size={24} className={`duration-300 ${page === totalPage ? "fill-gray" : `fill-${color} group-hover:fill-light`}`} />
       </button>
     </div>
   );

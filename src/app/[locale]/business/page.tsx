@@ -1,14 +1,13 @@
+import { useTranslations } from "next-intl";
+
 import { Hero } from "@/components";
 import { Businesses } from "@/layouts/business";
 
 export default function Business() {
+  const t = useTranslations("business.hero");
   return (
     <section className="overflow-x-hidden">
-      <Hero
-        title="Business"
-        description="Delivering comprehensive services across fabrication, machining, mechanical, electrical, civil engineering, and robotic, backed by reliable supply solutions for every industry."
-        pathImg="/home-header.webp"
-      />
+      <Hero title={`${t("title")}`} description={`${t("description")}`} pathImg="/home-header.webp" />
       <Businesses />
     </section>
   );

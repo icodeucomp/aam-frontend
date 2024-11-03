@@ -1,13 +1,15 @@
 import { Container, Img, Motion } from "@/components";
 
 import { organizationalLists } from "@/static";
+import { useTranslations } from "next-intl";
 
 export const Organizational = () => {
+  const t = useTranslations("profile.organizational-structure");
   return (
     <Container id="organizational" className="py-16 space-y-8">
       <Motion tag="div" initialY={-40} animateY={0} duration={0.3} className="space-y-4 text-center sm:space-y-2 sm:text-start">
-        <h3 className="heading">Organizational Structure</h3>
-        <p className="subheading">Get to know the passionate directors and managers behind our success</p>
+        <h3 className="heading">{t("title")}</h3>
+        <p className="subheading">{t("description")}</p>
       </Motion>
 
       <Motion tag="div" initialY={40} animateY={0} duration={0.6} delay={0.3} className="flex justify-center w-full h-full max-w-xl mx-auto">

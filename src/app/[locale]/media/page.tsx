@@ -1,11 +1,14 @@
+import { useTranslations } from "next-intl";
+
 import { Hero } from "@/components";
-import { Albums, ArticlesGallery, ProjectGallery } from "@/layouts/media";
+import { Albums, ArticlesGallery, ProjectsGallery } from "@/layouts/media";
 
 export default function Media() {
+  const t = useTranslations("media.hero");
   return (
     <section className="overflow-x-hidden">
-      <Hero title="Media" description="Stay Updated with the Latest Media Coverage, News Updates, and Press Announcements" pathImg="/home-header.webp" />
-      <ProjectGallery />
+      <Hero title={`${t("title")}`} description={`${t("description")}`} pathImg="/home-header.webp" />
+      <ProjectsGallery />
       <Albums />
       <ArticlesGallery />
     </section>

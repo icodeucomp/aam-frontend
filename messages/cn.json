@@ -2,6 +2,7 @@
   "welcome": "欢迎",
   "language": "语言",
   "view-all": "查看全部",
+  "btn-profile": "了解我们的公司简介",
   "home": {
     "hero": {
       "title": "信任我们，实现您的项目目标，从概念到完成。",
@@ -16,37 +17,41 @@
     },
     "services": {
       "one": {
-        "title": "综合供应商",
-        "description": "我们提供原材料或半成品的订购收集服务，并提供优质服务以满足业务需求。"
+        "title": "General Supplier",
+        "description": "We provide services for supplying raw or semi-finished goods in accordance with contracts mutually agreed upon by both parties.."
       },
       "two": {
-        "title": "建筑",
-        "description": "我们提供大规模和小规模项目的施工订购服务。凭借专业团队和丰富的经验，我们保证在每个建设阶段的质量。"
+        "title": "Construction",
+        "description": "We offer services for designing, constructing, and renovating infrastructure, including building structures and civil engineering works, as agreed upon by both parties."
       },
       "three": {
-        "title": "制造",
-        "description": "我们提供在制造、机械和工程领域的订购服务，包括产品和服务。"
+        "title": "Civil",
+        "description": "We provide fabrication services that include component manufacturing, structural assembly, and custom product work as needed."
       },
       "four": {
-        "title": "机械",
-        "description": "我们提供的机械服务包括工业机械和设备的组装、维护和修理。"
+        "title": "Robotic",
+        "description": "We provide mechanical services that include assembly, maintenance, and repair of industrial machinery and equipment."
       },
       "five": {
-        "title": "工程学",
-        "description": "我们提供的工程服务包括为各行各业设计、开发和实施工程解决方案。"
+        "title": "Fabrication",
+        "description": "We offer engineering services that include the design, development, and implementation of engineering solutions for various industries."
       },
       "six": {
-        "title": "电气",
-        "description": "我们为各工业部门提供电气服务，包括电气系统的安装、维护和修理。"
+        "title": "Mechanical",
+        "description": "We provide electrical services that include installation, maintenance, and repair of electrical systems for various industrial sectors."
       },
-      "title": "我们为您提供专属服务",
-      "description": "我们为您的业务提供专业服务"
+      "seven": {
+        "title": "Engineering",
+        "description": "We provide electrical services that include installation, maintenance, and repair of electrical systems for various industrial sectors."
+      },
+      "eight": {
+        "title": "Electrical",
+        "description": "We provide electrical services that include installation, maintenance, and repair of electrical systems for various industrial sectors."
+      }
     },
-    "clients": {
-      "title": "我们的客户",
-      "description": "我们合作创造旨在可持续性和在各种行业挑战中可靠的创新解决方案。"
-    },
-    "articles": "信息中心"
+    "clients": "我们的客户",
+    "articles": "最新文章",
+    "projects": "我们的最新项目"
   },
   "profile": {
     "hero": {
@@ -59,82 +64,34 @@
       "description-two": "PT Trijaya Berkah Mandiri作为一家综合供应商和项目公司, 致力于满足专注于电气特殊面板制造、机械、工程、安全和其他项目的商家的需求。在2019年, 我们开始涉足建筑领域。我们全心全意地服务，并根据客户的需求支持无论是大规模还是小规模的项目。"
     },
     "vision-mission": {
-      "title": "愿景",
       "vision": {
         "title": "愿景",
         "description": "满足工业部门在生产机械制造方面的需求，提供高质量的零件制造和维修服务，从而减少对外国产品的依赖，成为国内生产者。"
       },
       "mission": {
         "title": "使命",
-        "description-one": "提供机械制造以及零件制造和生产设备备件维修服务，确保高质量，从而使客户满意并建立良好的合作关系。",
-        "description-two": "帮助政府创造就业机会，以减少贫困、促进国内经济发展，并改善印尼家庭的福祉。"
+        "description-one": "提供符合全球标准并支持可持续发展的高质量建筑、制造和工程解决方案。",
+        "description-two": "整合先进技术，如机器人和网络安全，创造安全、高效和智能的基础设施。",
+        "description-three": "在所有业务领域鼓励持续创新，以引领建筑和技术领域的数字化转型。",
+        "description-four": "与各部门的利益相关者建立战略合作伙伴关系，以扩大服务范围并为客户创造附加价值。",
+        "description-five": "投资于人力资源开发，以确保在动态全球市场中的竞争优势。"
       }
     },
     "organizational-structure": {
       "title": "组织结构",
-      "description": "以下是我们成功的主要支柱。",
-      "job": {
-        "director": "Director",
-        "general-manager": "General Manager",
-        "electrical-manager": "Electrical Manager",
-        "accounting-manager": "Accounting Manager",
-        "project-manager": "Project Manager",
-        "machining-supervisor": "Machining Supervisor",
-        "fabrication-supervisor": "Fabrication Supervisor",
-        "leader-admin": "Leader Admin",
-        "safety": "Safety Officer"
-      }
-    }
-  },
-  "business": {
-    "details": {
-      "title": "服务",
-      "description": "PT.Trijaya Berkah Mandiri在一般供应、制造、机械、机电、土木和建筑等领域拥有丰富的经验和专业知识。我们拥有一支敬业和技术精湛的团队, 随时准备应对项目各个阶段的挑战。我们专注于创新和高效, 努力提供满足客户特定需求的解决方案。我们为与各个行业建立强大的合作伙伴关系、提供令人满意的成果以及为项目的成功做出贡献而感到自豪。",
-      "motto-name": "座右铭",
-      "motto": "工程卓越，始终伴您同行。",
-      "message": "所有工作将由监督员在高标准控制下进行监督, 从初步规划、进展到调试阶段。根据TBM标准或客户要求, 提供工作保证。",
-      "list-one": {
-        "title": "电气产品",
-        "description": "提供电缆、电气工具、面板、接触器、电机、电缆托盘、灯具、束线器、灯杆、风扇等。"
-      },
-      "list-two": {
-        "title": "电气项目",
-        "description": "照明杆、备用井、工业低压和高压安装、电话或对讲机、大厅音响系统、PLC避雷系统等。"
-      },
-      "list-three": {
-        "title": "机械零件",
-        "description": "橡胶、密封件、软管、管接头、喷油器、压力表、缝合、螺栓、管道等。"
-      },
-      "list-four": {
-        "title": "车间项目",
-        "description": "硬铬、喷砂、特氟龙涂层、镍铬、壳体结构、感谢项目、改造、管道、印刷、分离器、振动器、混合滚筒等。"
-      },
-      "list-five": {
-        "title": "建筑",
-        "description": "我们的工作包括工业建筑的建设或维修，安装各种类型的屋顶，如弹性模型、沥青模型、隔断和所有制造工作。"
-      },
-      "list-six": {
-        "title": "安全",
-        "description": "制造灭火器箱、喷嘴改造、烟雾探测器、软管升级、阀门、本地和进口喷淋设备及类似服务。"
-      },
-      "list-seven": {
-        "title": "人力供应",
-        "description": "从熟练工人到技术专家，我们都能根据您的业务需求和项目时间表提供可靠的劳动力解决方案。"
-      },
-      "list-eight": {
-        "title": "维修和保养",
-        "description": "我们提供专业、可靠的维修和维护服务，提供有效、优质的解决方案，确保您的设备发挥最佳性能。"
-      }
-    },
-    "experiences": {
-      "title": "经验",
-      "description": "我们已成功为多个行业和地区提供高质量的服务"
+      "description": "以下是我们成功的主要支柱。"
     }
   },
   "certification": {
     "hero": {
       "title": "法律和认证",
       "description": "我们公司致力于高标准，持有所有必要的法律合规和认证，以保证行业内最佳的服务质量和安全性."
+    }
+  },
+  "business": {
+    "hero": {
+      "title": "Business",
+      "description": "Delivering comprehensive services across fabrication, machining, mechanical, electrical, civil engineering, and robotic, backed by reliable supply solutions for every industry."
     }
   },
   "career": {
@@ -173,6 +130,11 @@
     "right-side": {
       "title": "有问题、评论或建议吗？",
       "description": "只需填写表格，我们会尽快与您联系",
+      "first-name": "名",
+      "last-name": "姓",
+      "email": "电子邮件",
+      "phone": "电话号码",
+      "message": "您的留言",
       "button-text": "发送消息"
     }
   },
@@ -185,10 +147,8 @@
       "title": "公司画廊",
       "description": "我们的工作实践：项目活动和文章"
     },
-    "project-activities": "项目活动",
+    "projects-gallery": "项目展厅",
     "articles-gallery": "文章画廊",
-    "latest-articles": "最新文章",
-    "more-articles": "更多文章",
     "share-articles": "分享这篇文章",
     "other-articles": "其他文章"
   },

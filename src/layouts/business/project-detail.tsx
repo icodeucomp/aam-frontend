@@ -7,6 +7,7 @@ import { useRouter } from "@/i18n/routing";
 
 import { useGet, useMediaQuery } from "@/hooks";
 
+import { motion } from "framer-motion";
 import { Container, Img, Motion, Pagination } from "@/components";
 
 import { FaArrowLeft } from "react-icons/fa6";
@@ -21,10 +22,11 @@ export const ProjectDetail = ({ slug }: { slug: string }) => {
   const [imageProjects, setImageProjects] = React.useState<{ url: string; slug: string }[]>([]);
 
   const [page, setPage] = React.useState<number>(1);
-  const [limit, setLimit] = React.useState<number>(2);
+  const [limit, setLimit] = React.useState<number>(3);
   const [totalPage, setTotalPage] = React.useState<number>(0);
 
-  const isTablet = useMediaQuery("(min-width: 640px)");
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const isTablet = useMediaQuery("(min-width: 640px) and (max-width: 767px)");
   const isMobile = useMediaQuery("(min-width: 0px) and (max-width: 639px)");
 
   React.useEffect(() => {
@@ -38,12 +40,14 @@ export const ProjectDetail = ({ slug }: { slug: string }) => {
   }, [project, limit, page]);
 
   React.useEffect(() => {
-    if (isTablet) {
+    if (isDesktop) {
+      setLimit(3);
+    } else if (isTablet) {
       setLimit(2);
     } else if (isMobile) {
       setLimit(1);
     }
-  }, [isTablet, isMobile]);
+  }, [isDesktop, isTablet, isMobile]);
 
   if (loading) {
     return (
@@ -67,6 +71,9 @@ export const ProjectDetail = ({ slug }: { slug: string }) => {
       </div>
 
       <div className="flex flex-col-reverse justify-between gap-4 md:gap-8 md:flex-row">
+        <Motion tag="div" initialX={40} animateX={0} duration={0.6} delay={0.3} className="max-w-md mx-auto md:max-w-full">
+          <Img src={project?.data.header?.url || "/temp-business.webp"} alt={project?.data.header.slug || slug} className="mx-auto rounded-lg aspect-square w-80 sm:w-72 md:w-80 xl:w-[400px]" cover />
+        </Motion>
         <Motion tag="div" initialX={-40} animateX={0} duration={0.3} className="flex flex-col w-full gap-4">
           <h3 className="text-2xl font-semibold sm:text-3xl lg:text-4xl text-primary">{project?.data.title}</h3>
           <p className="h-full overflow-y-auto text-sm leading-normal text-justify text-dark-blue sm:text-base md:h-44 scrollbar">{project?.data.description}</p>
@@ -78,29 +85,29 @@ export const ProjectDetail = ({ slug }: { slug: string }) => {
           <span className="text-lg text-center text-dark-blue md:text-start md:text-xl">Powered by</span>
           <Img className="h-14 min-w-28 max-w-28" src="/logo-company.png" alt="logo PT Amanah Aulia Mandiri" />
         </Motion>
-        <Motion tag="div" initialX={40} animateX={0} duration={0.6} delay={0.3} className="max-w-md mx-auto md:max-w-full">
-          <Img src={project?.data.header?.url || "/temp-business.webp"} alt={project?.data.header.slug || slug} className="mx-auto rounded-lg aspect-square w-80 sm:w-72 md:w-80 xl:w-96" cover />
-        </Motion>
       </div>
 
-      <h3 className="block mt-16 mb-4 text-center heading lg:hidden">Projects Photo gallery</h3>
-
-      <div className="flex flex-col-reverse items-center justify-between w-full gap-8 lg:mt-28 lg:flex-row">
-        <Motion tag="div" initialX={-40} animateX={0} duration={0.3} className="w-full space-y-4 max-w-72 xl:max-w-sm">
-          <div className="w-full lg:w-max">
-            <Pagination setPage={setPage} page={page} totalPage={totalPage} color="secondary" />
-          </div>
-          <h3 className="hidden max-w-xs heading lg:block">Projects Photo gallery</h3>
+      <div className="w-full space-y-8 mt-16">
+        <Motion tag="div" initialX={-40} animateX={0} duration={0.3} className="w-full flex items-center justify-center gap-8">
+          <h3 className="text-2xl font-semibold sm:text-3xl lg:text-4xl text-primary">Projects Photo gallery</h3>
+          <Pagination setPage={setPage} page={page} totalPage={totalPage} color="secondary" />
         </Motion>
 
         {imageProjects.length < 1 ? (
           <h3 className="w-full text-lg font-semibold text-center sm:text-2xl md:text-3xl text-gray/50">The projects photo gallery is not found</h3>
         ) : (
-          <Motion tag="div" initialX={40} animateX={0} duration={0.6} delay={0.3} className="grid w-full grid-cols-1 gap-8 sm:grid-cols-2">
+          <motion.div
+            key={page}
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -50 }}
+            transition={{ duration: 0.3 }}
+            className="grid w-full grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 overflow-hidden"
+          >
             {imageProjects.map((item, index) => (
               <Img key={index} src={item.url} alt={item.slug} className="mx-auto rounded-lg aspect-square w-80 sm:w-72 md:w-80 xl:w-96" cover />
             ))}
-          </Motion>
+          </motion.div>
         )}
       </div>
     </Container>

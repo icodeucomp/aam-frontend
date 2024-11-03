@@ -1,20 +1,42 @@
+"use client";
+
 import { useState } from "react";
+
+import { useRouter } from "next/navigation";
+
+import { useCookies } from "next-client-cookies";
 
 import toast from "react-hot-toast";
 
 import { request } from "@/utils";
 
-export const usePost = <T>(path: string, method: "POST" | "PATCH" | "DELETE") => {
-  const [response, setResponse] = useState<T | null>();
+export const usePost = (method: "GET" | "POST" | "PATCH" | "DELETE", linkHref?: string) => {
   const [loading, setLoading] = useState<boolean>();
   const [error, setError] = useState<string>();
 
-  const execute = async (body: any) => {
+  const { push } = useRouter();
+
+  const cookies = useCookies();
+
+  const execute = async (path: string, body: any) => {
     setLoading(true);
-    await request({ path, method, body })
+    await request({
+      path,
+      method,
+      body,
+      options: {
+        headers: {
+          Authorization: `Bearer ${cookies.get("session")}`,
+          "Access-Control-Allow-Origin": "*",
+        },
+      },
+    })
       .then((response) => {
         toast.success(response?.data.message);
-        setResponse(response.data);
+        if (linkHref) {
+          push(`/admin/dashboard/${linkHref}`);
+          return;
+        }
       })
       .catch((error) => {
         toast.error(error.response?.data.message || "There was an error");
@@ -25,5 +47,5 @@ export const usePost = <T>(path: string, method: "POST" | "PATCH" | "DELETE") =>
       });
   };
 
-  return { response, loading, error, execute };
+  return { loading, error, execute };
 };

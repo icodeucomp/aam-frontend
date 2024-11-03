@@ -2,6 +2,7 @@
   "welcome": "Selamat Datang",
   "language": "Bahasa Indonesia",
   "view-all": "Lihat Semuanya",
+  "btn-profile": "Dapatkan Profil Perusahaan kami",
   "home": {
     "hero": {
       "title": "Percayakan kepada Kami untuk Mencapai Tujuan Proyek Anda dari Konsep hingga Penyelesaian",
@@ -16,37 +17,41 @@
     },
     "services": {
       "one": {
-        "title": "Pemasok Umum",
-        "description": "Kami melayani pemesanan pengumpulan produk mentah atau setengah jadi dan menyediakan layanan berkualitas untuk memenuhi kebutuhan bisnis."
+        "title": "General Supplier",
+        "description": "We provide services for supplying raw or semi-finished goods in accordance with contracts mutually agreed upon by both parties.."
       },
       "two": {
-        "title": "Sipil & Konstruksi",
-        "description": "Kami melayani pemesanan konstruksi proyek skala besar dan kecil Dengan tim ahli dan pengalaman yang mendalam, kami menjamin kualitas dalam setiap tahap pembangunan."
+        "title": "Construction",
+        "description": "We offer services for designing, constructing, and renovating infrastructure, including building structures and civil engineering works, as agreed upon by both parties."
       },
       "three": {
-        "title": "Fabrikasi",
-        "description": "Kami menyediakan layanan fabrikasi yang mencakup pembuatan komponen, perakitan struktur, serta pengerjaan produk custom sesuai kebutuhan."
+        "title": "Civil",
+        "description": "We provide fabrication services that include component manufacturing, structural assembly, and custom product work as needed."
       },
       "four": {
-        "title": "Mekanik",
-        "description": "Kami menyediakan layanan di bidang mechanical yang meliputi perakitan, perawatan, dan reparasi mesin serta peralatan industri."
+        "title": "Robotic",
+        "description": "We provide mechanical services that include assembly, maintenance, and repair of industrial machinery and equipment."
       },
       "five": {
-        "title": "Teknik",
-        "description": "Kami menawarkan layanan engineering yang mencakup desain, pengembangan, dan implementasi solusi teknik untuk berbagai industri."
+        "title": "Fabrication",
+        "description": "We offer engineering services that include the design, development, and implementation of engineering solutions for various industries."
       },
       "six": {
-        "title": "Kelistrikan",
-        "description": "Kami menyediakan layanan electrical yang meliputi instalasi, perawatan, dan perbaikan sistem kelistrikan untuk berbagai sektor industri."
+        "title": "Mechanical",
+        "description": "We provide electrical services that include installation, maintenance, and repair of electrical systems for various industrial sectors."
       },
-      "title": "Layanan Khusus Kami untuk Anda",
-      "description": "Kami menyediakan layanan profesional untuk bisnis Anda"
+      "seven": {
+        "title": "Engineering",
+        "description": "We provide electrical services that include installation, maintenance, and repair of electrical systems for various industrial sectors."
+      },
+      "eight": {
+        "title": "Electrical",
+        "description": "We provide electrical services that include installation, maintenance, and repair of electrical systems for various industrial sectors."
+      }
     },
-    "clients": {
-      "title": "Klien kami",
-      "description": "Kami berkolaborasi untuk menciptakan solusi inovatif yang dirancang untuk keberlanjutan dan dapat diandalkan dalam berbagai tantangan industri."
-    },
-    "articles": "Pusat Informasi"
+    "clients": "Klien kami",
+    "articles": "Artikel Terbaru",
+    "projects": "Proyek Terbaru Kami"
   },
   "profile": {
     "hero": {
@@ -59,82 +64,34 @@
       "description-two": "PT.Trijaya Berkah Mandiri sebagai salah satu General Supplier dan Project hadir memenuhi kebutuhan para pebisnis yang fokus bergerak dalam bidang Electrical Spesial Panel Maker, Mechanical, Engineering, Safety dan Project lainnya. \nDan pada tahun 2019 kami mulai bergerak di bidang Kontruksi.Kami melayani dengan sepenuh hati dan mensupport sesuai dengan kebutuhan pelanggan baik skala besar maupun kecil."
     },
     "vision-mission": {
-      "title": "Visi",
       "vision": {
         "title": "Visi",
         "description": "Memenuhi kebutuhan sektor industri dalam hal pembuatan mesin-mesin produksi, serta menyediakan jasa pembuatan dan perbaikan part berkualitas yang baik, sehingga dapat mengurangi ketergantungan terhadap produk-produk luar negeri dan menjadi produsen di negara sendiri"
       },
       "mission": {
         "title": "Misi",
-        "description-one": "Memberikan pembuatan mesin maupun jasa pembuatan part hingga perbaikan sparepart mesin produksi dengan kualitas yang baik sehingga memberikan rasa kepuasan dan kepercayaan dari pelanggan sehingga dapat terjalin kerjasama yang baik",
-        "description-two": "Membantu pemerintah dalam menciptakan lapangan kerja guna mengurangi kemiskinan dan meningkatkan perekonomian dalam negeri serta mensejahterakan keluarga Indonesia"
+        "description-one": "Menghadirkan solusi konstruksi, fabrikasi, dan engineering berkualitas tinggi yang memenuhi standar global dan mendukung pembangunan berkelanjutan.",
+        "description-two": "Mengintegrasikan teknologi canggih, seperti robotik dan cybersecurity, untuk menciptakan infrastruktur yang aman, efisien, dan cerdas.",
+        "description-three": "Mendorong inovasi berkelanjutan dalam semua lini bisnis untuk memimpin transformasi digital di sektor konstruksi dan teknologi.",
+        "description-four": "Membangun kemitraan strategis dengan para pemangku kepentingan di berbagai sektor guna memperluas jangkauan layanan dan menciptakan nilai tambah bagi pelanggan.",
+        "description-five": "Berinvestasi dalam pengembangan sumber daya manusia untuk memastikan keunggulan kompetitif di pasar global yang dinamis."
       }
     },
     "organizational-structure": {
       "title": "Struktur Organisasi",
-      "description": "Berikut adalah sosok yang menjadi pilar utama kesuksesan kami.",
-      "job": {
-        "director": "Director",
-        "general-manager": "General Manager",
-        "electrical-manager": "Electrical Manager",
-        "accounting-manager": "Accounting Manager",
-        "project-manager": "Project Manager",
-        "machining-supervisor": "Machining Supervisor",
-        "fabrication-supervisor": "Fabrication Supervisor",
-        "leader-admin": "Leader Admin",
-        "safety": "Safety Officer"
-      }
-    }
-  },
-  "business": {
-    "details": {
-      "title": "Layanan",
-      "description": "PT. Trijaya Berkah Mandiri memiliki pengalaman yang kaya dan mendalam dalam berbagai proyek di bidang General Supplier, Fabrication, Machining, Mechanical, Electrical, Civil, dan Construction. Kami didukung oleh tim profesional yang kompeten dan berdedikasi, siap menghadapi tantangan di setiap tahap proyek. Dengan pendekatan yang berorientasi pada inovasi dan efisiensi, kami selalu berusaha memberikan solusi yang memenuhi kebutuhan spesifik klien kami. Kami bangga menjalin kemitraan yang kuat dengan berbagai industri, memberikan hasil yang memuaskan, dan berkontribusi pada kesuksesan proyek-proyek mereka.",
-      "motto-name": "Motto",
-      "motto": "Engineering Excellence, Every Step of the Way",
-      "message": "Semua pekerjaan akan diawasi di bawah kendali tinggi oleh seorang Supervisor mulai dari tahap perencanaan awal, pengerjaan, hingga commissioning. \nJaminan pekerjaan diberikan sesuai dengan standar TBM atau sesuai kebutuhan klien atau pelanggan.",
-      "list-one": {
-        "title": "Produk Listrik",
-        "description": "Supply Kabel, Alat Listrik, Panel, Kontaktor, Motor, Cable Tray, Lampu, Pengikat Kabel, Tiang Lampu, Kipas Angin dan lain-lain."
-      },
-      "list-two": {
-        "title": "Proyek Listrik",
-        "description": "Batang penerangan, Sumur Cad, Instalasi Tegangan Rendah dan Tinggi untuk industri, Telepon atau Interkom, Hall Sound System, sistem PLC penangkal petir dan lain-lain."
-      },
-      "list-three": {
-        "title": "Suku Cadang Mekanik",
-        "description": "Karet, Segel, Selang, Puting Pipa, Injektor, Pengukur Tekanan, Jahitan, Baut, Saluran dan lain-lain."
-      },
-      "list-four": {
-        "title": "Proyek Workshop",
-        "description": "Krom Keras, Peledakan Pasir, Pelapis Teflon, Krom Nikel, Struktur Cangkang, Proyek Terima Kasih, Perombakan, Perpipaan, Pencetakan, Pemisah, Penggetar, Gulungan Pencampur, dan lain-lain."
-      },
-      "list-five": {
-        "title": "Konstruksi",
-        "description": "Pekerjaan kami meliputi pembangunan gedung industri atau perbaikan gedung industri, pemasangan berbagai jenis atap seperti model Spandex, model Bitumen, partisi, dan segala pekerjaan fabrikasi."
-      },
-      "list-six": {
-        "title": "Keamanan",
-        "description": "Pembuatan Box Pemadam Kebakaran, Modifikasi Nozzle, Detektor Asap, Upgrade Selang, Valve, Alat Penyiram Lokal dan Impor, dan jasa sejenisnya."
-      },
-      "list-seven": {
-        "title": "Persediaan Tenaga Kerja",
-        "description": "Dari pekerja terampil hingga ahli teknis, kami menawarkan solusi tenaga kerja yang dapat diandalkan yang sesuai dengan kebutuhan bisnis dan jadwal proyek Anda."
-      },
-      "list-eight": {
-        "title": "Perbaikan & Pemeliharaan",
-        "description": "Kami menawarkan layanan perbaikan dan pemeliharaan yang profesional dan andal, memberikan solusi yang efektif dan berkualitas tinggi untuk memastikan kinerja peralatan Anda yang optimal."
-      }
-    },
-    "experiences": {
-      "title": "Pengalaman",
-      "description": "Kami telah berhasil memberikan layanan berkualitas tinggi di beragam industri dan wilayah"
+      "description": "Berikut adalah sosok yang menjadi pilar utama kesuksesan kami."
     }
   },
   "certification": {
     "hero": {
       "title": "Legalitas dan Sertifikasi",
       "description": "Kami berkomitmen pada standar tinggi dengan memastikan semua kepatuhan hukum dan sertifikasi yang diperlukan, menjamin kualitas dan keamanan layanan terbaik di industri."
+    }
+  },
+  "business": {
+    "hero": {
+      "title": "Business",
+      "description": "Delivering comprehensive services across fabrication, machining, mechanical, electrical, civil engineering, and robotic, backed by reliable supply solutions for every industry."
     }
   },
   "career": {
@@ -173,6 +130,11 @@
     "right-side": {
       "title": "Pertanyaan, komentar, atau saran?",
       "description": "Cukup isi formulir dan kami akan segera menghubungi Anda",
+      "first-name": "Nama Depan",
+      "last-name": "Nama Belakang",
+      "email": "Email",
+      "phone": "Nomor Telepon",
+      "message": "Pesan Anda",
       "button-text": "Kirim Pesan"
     }
   },
@@ -185,10 +147,8 @@
       "title": "Galeri Perusahaan",
       "description": "Pekerjaan Kami dalam Tindakan: Kegiatan Proyek dan Artikel"
     },
-    "project-activities": "Kegiatan Proyek",
+    "projects-gallery": "Galeri Proyek",
     "articles-gallery": "Galeri Artikel",
-    "latest-articles": "Artikel Terakhir",
-    "more-articles": "Artikel Lainnya",
     "share-articles": "Bagikan artikel ini",
     "other-articles": "Artikel Lainnya"
   },
@@ -256,13 +216,7 @@
       }
     },
     "business": {
-      "title": "Bisnis",
-      "fields": {
-        "one": "Layanan",
-        "two": "Produk",
-        "three": "Pengalaman",
-        "four": "Sektor Bisnis"
-      }
+      "title": "Bisnis"
     },
     "media": {
       "title": "Media",

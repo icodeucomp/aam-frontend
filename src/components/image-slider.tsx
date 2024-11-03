@@ -10,9 +10,10 @@ import { PiCaretLeftThin, PiCaretRightThin } from "react-icons/pi";
 
 interface SliderProps {
   images: string[];
+  imgClassName: string;
 }
 
-export const ImageSlider: React.FC<SliderProps> = ({ images }) => {
+export const ImageSlider: React.FC<SliderProps> = ({ images, imgClassName }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Handle next and previous navigation
@@ -25,7 +26,7 @@ export const ImageSlider: React.FC<SliderProps> = ({ images }) => {
   };
 
   return (
-    <div className="relative w-full max-w-3xl mx-auto overflow-hidden">
+    <div className="relative mx-auto w-72 aspect-square sm:w-80 lg:w-96 overflow-hidden">
       {/* Previous Button */}
       <button
         className={`absolute left-4 border border-secondary z-10 transform -translate-y-1/2 top-1/2 size-10 sm:size-12 flex items-center justify-center rounded-lg bg-light duration-300 group hover:bg-secondary`}
@@ -39,7 +40,7 @@ export const ImageSlider: React.FC<SliderProps> = ({ images }) => {
       <div className="relative flex">
         <AnimatePresence initial={false} mode="wait">
           <motion.div key={currentIndex} className="w-full h-full" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }} transition={{ duration: 0.3 }}>
-            <Img src={images[currentIndex] || "/temp-article.webp"} alt="image slider" className={`rounded-lg w-full mx-auto h-64 md:h-96`} cover />
+            <Img src={images[currentIndex] || "/temp-article.webp"} alt="image slider" className={`rounded-lg ${imgClassName ?? ""}`} cover />
           </motion.div>
         </AnimatePresence>
       </div>

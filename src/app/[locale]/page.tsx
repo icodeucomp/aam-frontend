@@ -8,7 +8,7 @@ export default function Home() {
       <Hero />
       <Messages />
       <Services />
-      <div className="relative">
+      <div className="relative overflow-hidden">
         <Image src="/images/house-frame-dark.webp" alt="house frame" className="absolute top-16 right-16 opacity-40" objectPosition="top" objectFit="cover" width={1000} height={1000} />
         <Projects />
         <LatestArticles />

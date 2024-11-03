@@ -2,6 +2,8 @@
 
 import * as React from "react";
 
+import { useTranslations } from "next-intl";
+
 import { useGet, useMediaQuery } from "@/hooks";
 
 import { useDebounce } from "use-debounce";
@@ -10,6 +12,8 @@ import { Pagination, Motion, Container, ArticleCard } from "@/components";
 import { ResponseArticlesTypes } from "@/types";
 
 export const LatestArticles = () => {
+  const t = useTranslations("home");
+
   const [page, setPage] = React.useState<number>(1);
   const [limit, setLimit] = React.useState<number>(3);
   const [totalPage, setTotalPage] = React.useState<number>(0);
@@ -53,7 +57,7 @@ export const LatestArticles = () => {
     <Container className="w-full py-16 space-y-8">
       <div className="flex items-center justify-between">
         <Motion tag="h3" initialX={-50} animateX={0} duration={0.4} className="heading">
-          Latest News
+          {t("articles")}
         </Motion>
         <Motion tag="div" initialX={50} animateX={0} duration={0.8} delay={0.4} className="relative flex items-center gap-4">
           <Pagination page={page} totalPage={totalPage} setPage={setPage} color="secondary" />
@@ -66,9 +70,15 @@ export const LatestArticles = () => {
         </div>
       ) : (
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {articles?.data.map((item, index) => (
-            <ArticleCard date={item.updatedAt} pathImg={item.header} pathUrl={item.slug} title={item.title} key={index} />
-          ))}
+          {articles?.data && articles.data.length < 1 ? (
+            <h3 className="w-full col-span-1 py-16 text-lg font-semibold text-center min-h-300 sm:text-2xl md:text-3xl md:col-span-2 lg:col-span-3 text-gray/50">The articles is not found</h3>
+          ) : (
+            <>
+              {articles?.data.map((item, index) => (
+                <ArticleCard date={item.updatedAt} pathImg={item.header} pathUrl={item.slug} title={item.title} key={index} />
+              ))}
+            </>
+          )}
         </div>
       )}
     </Container>

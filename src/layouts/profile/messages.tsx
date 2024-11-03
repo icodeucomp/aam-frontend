@@ -1,53 +1,54 @@
+"use client";
+
+import * as React from "react";
+
+import { useTranslations } from "next-intl";
+
 import { Container, Img, Motion } from "@/components";
+import { motion } from "framer-motion";
 
 export const Messages = () => {
+  const t = useTranslations("profile.message");
+
+  const images: string[] = ["/images/profile-photo-1.webp", "/images/profile-photo-2.webp", "/images/profile-photo-3.webp", "/images/profile-photo-4.webp"];
+  const [currentSlide, setCurrentSlide] = React.useState(0);
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % images.length);
+    }, 5000); // Change slide every 3 seconds
+
+    return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <Container id="about-us" className="flex flex-col-reverse justify-between items-center gap-8 lg:gap-20 lg:flex-row">
       <div className="w-full space-y-4 font-semibold flex-1 py-10">
         <Motion tag="h2" initialX={-40} animateX={0} duration={0.3} className="heading">
           PT Amanah Aulia Mandiri
         </Motion>
-        <Motion
-          tag="h4"
-          initialX={-40}
-          animateX={0}
-          duration={0.6}
-          delay={0.3}
-          className="text-base font-semibold text-justify sm:text-lg md:text-xl lg:text-2xl text-primary lg:text-start"
-        >
-          We are General Supplier, Fabrication, Machining, Mechanical, Electrical, Robotic and Civil company.
+        <Motion tag="h4" initialX={-40} animateX={0} duration={0.6} delay={0.3} className="text-base font-semibold text-justify sm:text-lg md:text-xl lg:text-2xl text-primary lg:text-start">
+          {t("subtitle")}
         </Motion>
-        <Motion
-          tag="p"
-          initialX={-40}
-          animateX={0}
-          duration={0.9}
-          delay={0.6}
-          className="text-sm font-normal text-justify sm:text-base text-dark-blue"
-        >
-          PT Amanah Aulia Mandiri telah berjalan sejak tahun 2015 dan selama perjalanan, kami telah banyak melayani produk-produk baik dalam skala
-          besar maupun kecil, begitu juga proyek-proyek, pekerjaan, workshop, dan hampir sebagian besar mendominasi daerah Banten barat hingga
-          sebagian wilayah Jawa, Sumatera dan Kalimantan.
+        <Motion tag="p" initialX={-40} animateX={0} duration={0.9} delay={0.6} className="text-sm font-normal text-justify sm:text-base text-dark-blue">
+          {t("description-one")}
         </Motion>
-        <Motion
-          tag="p"
-          initialX={-40}
-          animateX={0}
-          duration={0.9}
-          delay={0.6}
-          className="text-sm font-normal text-justify sm:text-base text-dark-blue"
-        >
-          PT Amanah Aulia Mandiri sebagai salah satu General Supplier dan Project hadir memenuhi kebutuhan para pebisnis yang berorientasi bergerak
-          dalam bidang Electrical Spesial Panel Maker, Mechanical, Engineering, Safety dan Project lainnya. Dan pada tahun 2019 kami mulai bergerak di
-          bidang Kontruksi. Kami melayani dengan sepenuh hati dan mensupport sesuai dengan kebutuhan customer baik skala besar maupun kecil.
+        <Motion tag="p" initialX={-40} animateX={0} duration={0.9} delay={0.6} className="text-sm font-normal text-justify sm:text-base text-dark-blue">
+          {t("description-two")}
         </Motion>
       </div>
-      <Motion tag="div" initialX={40} animateX={0} duration={0.6} delay={0.3} className="relative w-full flex-1">
-        <Img
-          src="/images/aam-office.webp"
-          alt="PT Trijaya Berkah Mandiri company building picture "
-          className="w-[300px] sm:w-[400px] md:w-[500px] xl:w-[600px] aspect-square mx-auto"
-        />
+      <Motion tag="div" initialX={40} animateX={0} duration={0.6} delay={0.3} className="relative w-full flex justify-center flex-1">
+        <div className="overflow-hidden w-max h-max">
+          <motion.div key={currentSlide} initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }} transition={{ duration: 0.5 }} className={`w-full h-full`}>
+            <Img src={images[currentSlide]} alt="PT Amanah Aulia Mandiri company building picture" className="w-[300px] sm:w-[400px] md:w-[500px] aspect-square mx-auto rounded-lg" cover />
+          </motion.div>
+        </div>
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+          {images.map((_, index) => (
+            <span key={index} className={`size-3 rounded-full ${index === currentSlide ? "bg-light" : "bg-gray/70"}`}></span>
+          ))}
+        </div>
       </Motion>
     </Container>
   );

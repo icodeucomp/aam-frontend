@@ -7,6 +7,19 @@
   box-shadow: 0px 8px 8px #181c143b;
 }
 
+/* container border custom style */
+.container-border {
+  background-color: #f3f4f6;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='30' ry='30' stroke='%23525B6BFF' stroke-width='4' stroke-dasharray='16' stroke-dashoffset='43' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 /* scrollbar style */
 .scrollbar::-webkit-scrollbar {
   width: 12px;
@@ -22,7 +35,7 @@
   border: 3px solid #f3f4f6;
 }
 .scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #0e2d65;
+  background: #219ebc;
 }
 
 /* loading styles */
@@ -45,7 +58,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border-left: 4px solid #0e2d65;
+  border-left: 4px solid #219ebc;
   border-bottom: 4px solid transparent;
   animation: rotation 0.5s linear infinite reverse;
 }
@@ -58,7 +71,35 @@
   }
 }
 
+/* preview pdf style */
+.preview-thumbnail-small > .rpv-core__viewer {
+  width: 100px !important;
+  height: 100px !important;
+}
+.preview-thumbnail-big > .rpv-core__viewer {
+  width: 260px !important;
+  height: 260px !important;
+  margin: 0 auto !important;
+}
+.preview-thumbnail-selected > .rpv-core__viewer {
+  width: 550px !important;
+  height: 550px !important;
+}
+@media only screen and (max-width: 640px) {
+  .preview-thumbnail-small > .rpv-core__viewer {
+    width: 90px !important;
+    height: 90px !important;
+  }
+  .preview-thumbnail-selected > .rpv-core__viewer {
+    width: 350px !important;
+    height: 350px !important;
+  }
+}
+
 /* ckeditor style */
+.ck.ck-balloon-panel.ck-powered-by-balloon {
+  display: none !important;
+}
 .ck-content * {
   all: revert;
   color: #181c14 !important;
@@ -78,7 +119,7 @@
   width: 100% !important;
 }
 .dangerous_html p {
-  text-align: justify;
+  text-align: justify !important;
 }
 .dangerous_html blockquote {
   font-style: italic !important;
@@ -130,7 +171,7 @@
     @apply absolute flex items-center justify-center w-16 h-16 -translate-x-1/2 -translate-y-1/2 border-4 rounded-full left-1/2 top-1/2 bg-secondary border-light;
   }
   .btn-cross-border {
-    @apply absolute duration-300 right-4 top-4 flex justify-center items-center rounded-full border-primary border-2 size-8 hover:bg-primary;
+    @apply absolute duration-300 right-4 top-4 flex justify-center items-center rounded-full border-secondary border-2 size-8 hover:bg-secondary;
   }
   .btn-back {
     @apply flex items-center justify-center duration-300 border rounded-lg size-10 sm:size-12 bg-light border-secondary hover:bg-secondary;
@@ -168,6 +209,15 @@
   .form-contact-input {
     @apply w-full text-sm bg-light-gray border border-gray outline-primary focus:border-primary p-2.5 rounded-md duration-300;
   }
+  .file-label {
+    @apply block px-4 py-2 mr-4 text-sm font-semibold border-0 cursor-pointer rounded-s-lg whitespace-nowrap bg-light-gray text-primary hover:bg-blue-200;
+  }
+  .sidebar-menu {
+    @apply relative flex items-center justify-center py-2 overflow-hidden duration-300 rounded-lg hover:bg-primary;
+  }
+  .select-input {
+    @apply block cursor-pointer py-2.5 px-2 w-full bg-light border-0 border-b-2 border-gray appearance-none focus:outline-none focus:ring-0 focus:border-primary;
+  }
   .social-media-icons {
     @apply rounded-full duration-300 cursor-pointer flex justify-center items-center size-10 border border-primary hover:bg-primary;
   }
@@ -175,6 +225,6 @@
     @apply relative flex items-center justify-between w-full gap-4 px-3 sm:px-6 min-h-28 sm:min-h-32 lg:min-h-28 cursor-pointer bg-light;
   }
   .pagination-number {
-    @apply size-10 sm:size-12 md:size-14 flex items-center justify-center text-center transition-all border rounded-lg shadow-sm border-gray/50 text-dark-blue min-w-9;
+    @apply size-10 sm:size-12 flex items-center justify-center text-center transition-all border rounded-lg shadow-sm border-gray/50 text-dark-blue min-w-9;
   }
 }

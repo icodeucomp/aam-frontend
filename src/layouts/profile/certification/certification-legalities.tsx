@@ -5,7 +5,7 @@ import { useGet } from "@/hooks";
 
 import { useDebounce } from "use-debounce";
 
-import { Container, Img, Motion, Pagination } from "@/components";
+import { Container, DisplayThumbnail, Motion, Pagination } from "@/components";
 import { SearchFilter } from "./search-filter";
 import { CardCertification } from "./card-certification";
 
@@ -34,7 +34,7 @@ export const CertificationLegalities = () => {
   const { response: documents, loading } = useGet<ResponseDocumentsTypes>({
     path: "/documents",
     searchQuery: debouncedSearchTerm,
-    limit: "5",
+    limit: "4",
     page: page.toString(),
     sort,
     order,
@@ -123,8 +123,13 @@ export const CertificationLegalities = () => {
                   </div>
                 ) : (
                   <>
-                    <div className="flex justify-center w-full mt-4 lg:mt-8 preview-thumbnail-selected">
-                      <Img src="/temp-image.png" alt="temporary" className="aspect-square w-96" />
+                    <div className="flex justify-center w-full mt-4 lg:mt-20 preview-thumbnail-selected">
+                      <DisplayThumbnail
+                        fileUrl={
+                          selectedCard?.url ||
+                          "https://icodeu-storage.s3.ap-southeast-1.amazonaws.com/documents/award/surat-pernyataan-ambil-sertifikat-toeflmuhammad-helmy-fadlail-albab-1728069726585.pdf"
+                        }
+                      />
                     </div>
                     <div className="space-y-2 text-dark-blue">
                       <h5 className="text-lg font-semibold sm:text-xl md:text-3xl">{selectedCard?.name}</h5>

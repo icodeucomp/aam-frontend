@@ -4,6 +4,8 @@ import { getMessages } from "next-intl/server";
 import { Poppins } from "next/font/google";
 
 import type { Metadata } from "next";
+
+import { Toaster } from "react-hot-toast";
 import { Footer, Header } from "@/layouts";
 
 const poppins = Poppins({
@@ -26,8 +28,9 @@ export default async function RootLayout({ children, params: { locale } }: { chi
 
   return (
     <html lang={locale}>
-      <body className={`${poppins.className} flex flex-col`}>
+      <body className={`${poppins.className} flex flex-col min-h-screen`}>
         <NextIntlClientProvider messages={messages}>
+          <Toaster position="bottom-center" />
           <Header />
           {children}
           <Footer />

@@ -2,6 +2,7 @@
   "welcome": "Welcome",
   "language": "English Language",
   "view-all": "View All",
+  "btn-profile": "Get our Company Profile",
   "home": {
     "hero": {
       "title": "Rely on Us to Deliver Your Project Goals from Concept to Completion",
@@ -20,33 +21,37 @@
         "description": "We provide services for supplying raw or semi-finished goods in accordance with contracts mutually agreed upon by both parties.."
       },
       "two": {
-        "title": "Civil & Construction",
+        "title": "Construction",
         "description": "We offer services for designing, constructing, and renovating infrastructure, including building structures and civil engineering works, as agreed upon by both parties."
       },
       "three": {
-        "title": "Fabrication",
+        "title": "Civil",
         "description": "We provide fabrication services that include component manufacturing, structural assembly, and custom product work as needed."
       },
       "four": {
-        "title": "Mechanical",
+        "title": "Robotic",
         "description": "We provide mechanical services that include assembly, maintenance, and repair of industrial machinery and equipment."
       },
       "five": {
-        "title": "Engineering",
+        "title": "Fabrication",
         "description": "We offer engineering services that include the design, development, and implementation of engineering solutions for various industries."
       },
       "six": {
-        "title": "Electrical",
+        "title": "Mechanical",
         "description": "We provide electrical services that include installation, maintenance, and repair of electrical systems for various industrial sectors."
       },
-      "title": "Our Dedicated Services for You",
-      "description": "We provide professional services for your business"
+      "seven": {
+        "title": "Engineering",
+        "description": "We provide electrical services that include installation, maintenance, and repair of electrical systems for various industrial sectors."
+      },
+      "eight": {
+        "title": "Electrical",
+        "description": "We provide electrical services that include installation, maintenance, and repair of electrical systems for various industrial sectors."
+      }
     },
-    "clients": {
-      "title": "Our Clients",
-      "description": "We collaborate to engineer solutions that stand the test of time"
-    },
-    "articles": "Newsrooms"
+    "clients": "Our Clients",
+    "articles": "Latest Articles",
+    "projects": "Our Latest Projects"
   },
   "profile": {
     "hero": {
@@ -59,82 +64,34 @@
       "description-two": "As a leading General Supplier and Project provider, PT Trijaya Berkah Mandiri meets the needs of businesses in the fields of Electrical Special Panel Making, Mechanical, Engineering, Safety, and other related projects. In 2019, we expanded into the construction sector. We are dedicated to serving with utmost care and supporting our customers’ needs, whether for large or small-scale projects."
     },
     "vision-mission": {
-      "title": "Vision & Missions",
       "vision": {
         "title": "Vision",
         "description": "Meeting the needs of the industrial sector in manufacturing production machines, we also provide high-quality fabrication and repair services for parts. This helps reduce reliance on foreign products and supports the growth of domestic production capabilities."
       },
       "mission": {
         "title": "Missions",
-        "description-one": "Provide services for manufacturing machines, as well as producing and repairing high-quality production machine parts. This ensures customer satisfaction and trust, fostering strong and lasting partnerships.",
-        "description-two": "Support the government’s efforts to create jobs, reduce unemployment, and boost the national economy, contributing to the well-being of Indonesian families."
+        "description-one": "Providing high-quality construction, fabrication, and engineering solutions that meet global standards and support sustainable development.",
+        "description-two": "Integrating advanced technologies, such as robotics and cybersecurity, to create safe, efficient, and intelligent infrastructure.",
+        "description-three": "Encouraging continuous innovation across all business lines to lead the digital transformation in the construction and technology sectors.",
+        "description-four": "Building strategic partnerships with stakeholders in various sectors to expand service reach and create added value for customers.",
+        "description-five": "Investing in human resource development to ensure competitive advantage in the dynamic global market."
       }
     },
     "organizational-structure": {
       "title": "Organizational Structure",
-      "description": "Get to know the passionate directors and managers behind our success.",
-      "job": {
-        "director": "Director",
-        "general-manager": "General Manager",
-        "electrical-manager": "Electrical Manager",
-        "accounting-manager": "Accounting Manager",
-        "project-manager": "Project Manager",
-        "machining-supervisor": "Machining Supervisor",
-        "fabrication-supervisor": "Fabrication Supervisor",
-        "leader-admin": "Leader Admin",
-        "safety": "Safety Officer"
-      }
-    }
-  },
-  "business": {
-    "details": {
-      "title": "Services & Products Details",
-      "description": "PT. A brings a wealth of experience and expertise across various projects in General Supply, Fabrication, Machining, Mechanical, Electrical, Civil, and Construction. Supported by a dedicated and skilled team, we are prepared to tackle challenges at every stage of a project. With a focus on innovation and efficiency, we strive to deliver solutions that meet the specific needs of our clients. We take pride in building strong partnerships across various industries, delivering satisfying results, and contributing to the success of their projects.",
-      "motto-name": "Motto",
-      "motto": "Engineering Excellence, Every Step of the Way",
-      "message": "All work will be supervised under high control by a Supervisor from the initial planning, progress, to commissioning stages. A work guarantee is provided in accordance with TBM standards or as required by the client or customer.",
-      "list-one": {
-        "title": "Electrical Products",
-        "description": "Supply Cable, Electrical Tools, Panel, Contactor, Motor, Cable Tray, Lamp, Cable ties, Light poles, Fan and etc."
-      },
-      "list-two": {
-        "title": "Electrical Project",
-        "description": "Lighting rod, Cad Well, Installation Low ang High Voltage for industries, Phone or Intercom, Hall Sound System, lightning protection  PLC system and etc."
-      },
-      "list-three": {
-        "title": "Mechanical Spare part",
-        "description": "Rubber, Seal, Hose, Pipe Nipple, Injector, Pressure gauge, Sews, Bolt, Conduit  and etc."
-      },
-      "list-four": {
-        "title": "Workshop Project",
-        "description": "Hard Chrome, Sand Blasting, Teflon Coating, Nikel Chrome, Shell Structure, Thank Project, Overhaul, Piping, Molding,Separator, Vibrator, Mixing Rolls and etc."
-      },
-      "list-five": {
-        "title": "Construction",
-        "description": "Our work includes industrial building construction or industrial building repairs, installation of various types of roofing such as Spandex models, Bitumen models, partitioning, and all fabrication work."
-      },
-      "list-six": {
-        "title": "Safety",
-        "description": "Manufacturing of Fire Extinguisher Boxes, Nozzle Modification, Smoke Detectors, Hose Upgrades, Valves, Local and Imported Sprinklers, and similar services."
-      },
-      "list-seven": {
-        "title": "Manpower Supply",
-        "description": "From skilled laborers to technical experts, we offer reliable workforce solutions that align with your business needs and project timelines."
-      },
-      "list-eight": {
-        "title": "Repair & Maintenance",
-        "description": "We offer professional and reliable repair and maintenance services, providing effective and high-quality solutions to ensure the optimal performance of your equipment."
-      }
-    },
-    "experiences": {
-      "title": "Experiences",
-      "description": "We have successfully delivered high-quality services across a diverse range of industries and regions"
+      "description": "Get to know the passionate directors and managers behind our success."
     }
   },
   "certification": {
     "hero": {
       "title": "Legalities and Certifications",
       "description": "Committed to high standards, our company holds all necessary legal compliances and certifications to guarantee the best service quality and safety in the industry."
+    }
+  },
+  "business": {
+    "hero": {
+      "title": "Business",
+      "description": "Delivering comprehensive services across fabrication, machining, mechanical, electrical, civil engineering, and robotic, backed by reliable supply solutions for every industry."
     }
   },
   "career": {
@@ -173,6 +130,11 @@
     "right-side": {
       "title": "Questions, comments, or suggestions?",
       "description": "Simply fill in the form and we`ll be in touch shortly",
+      "first-name": "First Name",
+      "last-name": "Last Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "message": "Your Message",
       "button-text": "Send Message"
     }
   },
@@ -185,10 +147,8 @@
       "title": "Company Gallery",
       "description": "Our Work in Action: Projects Activities and Articles"
     },
-    "project-activities": "Project Activities",
+    "projects-gallery": "Project gallery",
     "articles-gallery": "Articles Gallery",
-    "latest-articles": "Latest Articles",
-    "more-articles": "More Articles",
     "share-articles": "Share this article",
     "other-articles": "Other Articles"
   },

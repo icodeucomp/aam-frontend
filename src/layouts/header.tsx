@@ -4,11 +4,15 @@ import { useEffect, useState } from "react";
 
 import { Link } from "@/i18n/routing";
 
+import { useTranslations } from "next-intl";
+
 import { useToggleState } from "@/hooks";
 
 import { Button, Img, LanguageSwitcher, Navbar } from "@/components";
 
 export const Header = () => {
+  const t = useTranslations("");
+
   const [ref, navbar, toggleNavbar] = useToggleState(false);
 
   const [isVisible, setIsVisible] = useState<boolean>(true);
@@ -47,7 +51,7 @@ export const Header = () => {
           <Navbar navbar={navbar} toggleNavbar={toggleNavbar} />
 
           <div className="hidden lg:block">
-            <Button className="shadow-lg btn-secondary">Get Our Company Profile</Button>
+            <Button className="shadow-lg btn-secondary">{t("btn-profile")}</Button>
           </div>
 
           <div className="block lg:hidden">

@@ -126,7 +126,12 @@ export const FilterButton = ({ business }: { business: BusinessesTypes | undefin
           {openModalIndex !== null && (
             <Modal isVisible={openModalIndex !== null} onClose={() => setOpenModalIndex(null)}>
               <div className="flex flex-col gap-4 md:gap-8 md:flex-row">
-                {filterBusiness && filterBusiness?.media.length > 0 ? <ImageSlider images={filterBusiness?.media?.map((item) => item.url)} /> : <ImageSlider images={["/temp-business.webp"]} />}
+                {filterBusiness && filterBusiness?.media.length > 0 ? (
+                  <ImageSlider images={filterBusiness?.media?.map((item) => item.url)} imgClassName="w-72 sm:w-80 mx-auto lg:w-96 aspect-square rounded-lg" />
+                ) : (
+                  <ImageSlider images={["/temp-business.webp"]} imgClassName="w-72 sm:w-80 mx-auto lg:w-96 aspect-square rounded-lg" />
+                )}
+
                 <div className="relative w-full space-y-4 md:space-y-8">
                   <h3 className="text-xl font-medium sm:text-2xl md:text-3xl text-primary">{typeBusiness}</h3>
                   <div className="space-y-2 md:space-y-4">

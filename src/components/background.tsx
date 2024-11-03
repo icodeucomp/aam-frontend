@@ -10,7 +10,7 @@ export const Background = ({ src, className, children, parentClassName, isHover 
       <Image
         src={src}
         alt="background image"
-        placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(400, 400))}`}
+        placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(800, 800))}`}
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         fill
         priority

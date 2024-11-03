@@ -1,7 +1,5 @@
 import { Link } from "@/i18n/routing";
 
-import { useTranslations } from "next-intl";
-
 import { Container, Img } from "@/components";
 
 import { FooterLists } from "@/static";
@@ -9,8 +7,6 @@ import { FooterLists } from "@/static";
 import { MdCall, MdEmail } from "react-icons/md";
 
 export const Footer = () => {
-  const t = useTranslations("footer");
-
   const footerLists = FooterLists();
   return (
     <footer className="mt-auto bg-primary">
@@ -19,7 +15,6 @@ export const Footer = () => {
           <Link href="/" className="space-y-1">
             <Img className="h-14 min-w-28 max-w-28" src="/logo-company.png" alt="logo PT Amanah Aulia Mandiri" />
           </Link>
-          <h4 className="text-lg font-semibold sm:text-xl md:text-2xl">{t("description")}</h4>
           <p className="text-sm">Jl. Bhayangkara No.136B, Kota Serang-Banten 42118</p>
           <div className="space-y-1">
             <div className="flex items-center gap-2 text-sm sm:text-base">
@@ -32,7 +27,7 @@ export const Footer = () => {
               <span className="p-2 rounded-full bg-light">
                 <MdEmail className="fill-primary" />
               </span>
-              <span>tbm.srg@gmail.com</span>
+              <span>amanahsrg@gmail.com</span>
             </div>
           </div>
           <h5 className="text-sm">© Copyright PT Trijaya Berkah Mandiri</h5>

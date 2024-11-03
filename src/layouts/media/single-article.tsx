@@ -6,6 +6,8 @@ import { Link } from "@/i18n/routing";
 
 import { notFound } from "next/navigation";
 
+import { useTranslations } from "next-intl";
+
 import { useGet } from "@/hooks";
 
 import toast from "react-hot-toast";
@@ -37,6 +39,8 @@ const RelatedArticles = ({ date, title, pathUrl, pathImg }: ArticleCardProps) =>
 };
 
 export const SingleArticle = ({ slug }: { slug: string }) => {
+  const t = useTranslations("media");
+
   const { response: articles, loading: loadingArticles } = useGet<ResponseArticlesTypes>({ path: "/blogs", limit: "5" });
   const { response: article, loading: loadingArticle, error } = useGet<ResponseArticleTypes>({ path: `/blogs/${slug}` });
 
@@ -51,7 +55,7 @@ export const SingleArticle = ({ slug }: { slug: string }) => {
   }
 
   return (
-    <Container className="p-10 sm:pt-16 grid grid-cols-1 lg:grid-cols-3 grid-rows-[auto,auto] gap-x-6 gap-y-4 xl:gap-16 text-dark-blue">
+    <Container className="p-10 sm:pt-16 grid grid-cols-1 lg:grid-cols-3 grid-rows-[auto,auto] gap-x-6 gap-y-4 xl:gap-x-16 text-dark-blue">
       {loadingArticle ? (
         <div className="flex justify-center w-full col-span-2 py-4">
           <span className="loader"></span>
@@ -80,7 +84,7 @@ export const SingleArticle = ({ slug }: { slug: string }) => {
           <Motion tag="div" initialX={0} animateX={0} duration={0.8} delay={0.6} className="w-full h-auto text-justify lg:col-span-2">
             <div className="dangerous_html" dangerouslySetInnerHTML={{ __html: article?.data.content as TrustedHTML }} />
             <div className="flex items-center justify-end gap-2 pt-6">
-              <span className="text-base md:text-xl text-primary">Share this article</span>
+              <span className="text-base md:text-xl text-primary">{t("share-articles")}</span>
               <button onClick={handleShareButton} className="p-2.5 duration-300 border rounded-full border-primary group hover:bg-primary">
                 <FaLink size={20} className="duration-300 fill-primary group-hover:fill-light" />
               </button>
@@ -98,7 +102,7 @@ export const SingleArticle = ({ slug }: { slug: string }) => {
             <Motion tag="div" initialX={40} animateX={0} duration={0.4} delay={0.2} className={`sticky top-4 hidden space-y-12 lg:block`}>
               <div className="flex items-center gap-4 pt-1">
                 <i className="h-12 border-l-4 border-secondary" />
-                <h5 className="text-2xl font-semibold text-primary">Other Articles</h5>
+                <h5 className="text-2xl font-semibold text-primary">{t("other-articles")}</h5>
               </div>
 
               <div className="space-y-8">

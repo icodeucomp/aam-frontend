@@ -13,3 +13,4 @@ export * from "./image-slider";
 export * from "./dropdown";
 export * from "./breadcrumb";
 export * from "./slider";
+export * from "./display-thumbnail";
