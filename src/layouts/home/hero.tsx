@@ -1,3 +1,7 @@
+"use client";
+
+import * as React from "react";
+
 import { Background, Button, Img, Motion } from "@/components";
 
 import { Link } from "@/i18n/routing";
@@ -5,8 +9,21 @@ import { useTranslations } from "next-intl";
 
 export const Hero = () => {
   const t = useTranslations("home.hero");
+
+  const images: string[] = ["/images/header-photo-1.webp", "/images/header-photo-2.webp", "/images/header-photo-3.webp", "/images/header-photo-4.webp"];
+  const [currentSlide, setCurrentSlide] = React.useState(0);
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % images.length);
+    }, 10000);
+
+    return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
-    <Background src="/home-header.webp" className="items-center max-w-screen-xl px-4 sm:px-8 min-h-500 lg:min-h-custom-header-home" parentClassName="filter">
+    <Background src={images[currentSlide]} className="items-center max-w-screen-xl px-4 sm:px-8 min-h-500 lg:min-h-custom-header-home" parentClassName="bg-black/50">
       <div className="max-w-screen-lg space-y-4">
         <Motion tag="h1" initialX={-50} animateX={0} duration={0.3} className="text-3xl font-semibold leading-snug md:text-4xl lg:text-5xl">
           {t("title")}

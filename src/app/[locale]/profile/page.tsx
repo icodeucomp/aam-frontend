@@ -8,7 +8,7 @@ export default function Profile() {
   const t = useTranslations("profile.hero");
   return (
     <section className="overflow-x-hidden">
-      <Hero title={`${t("title")}`} description={`${t("description")}`} pathImg="/home-header.webp" />
+      <Hero title={`${t("title")}`} description={`${t("description")}`} />
       <Messages />
       <VisionMission />
       <Organizational />

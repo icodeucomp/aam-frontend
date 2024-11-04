@@ -6,16 +6,7 @@ import { shimmer, toBase64 } from "@/utils";
 export const Img = ({ src, alt, className, cover }: ImageProps) => {
   return (
     <div className={`relative overflow-hidden ${className ?? ""}`}>
-      <Image
-        src={src}
-        alt={alt}
-        fill
-        objectFit={cover ? "cover" : ""}
-        objectPosition="center"
-        placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(500, 500))}`}
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        className="w-full h-full"
-      />
+      <Image src={src} alt={alt} fill objectFit={cover ? "cover" : ""} objectPosition="center" placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(500, 500))}`} className="w-full h-full" />
     </div>
   );
 };

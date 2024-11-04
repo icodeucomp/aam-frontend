@@ -8,7 +8,7 @@ export default function ContactUs() {
 
   return (
     <section className="overflow-x-hidden">
-      <Hero title={`${t("title")}`} description={`${t("description")}`} pathImg="/home-header.webp" />
+      <Hero title={`${t("title")}`} description={`${t("description")}`} />
       <div className="relative overflow-hidden py-10 sm:py-16 md:py-20">
         <div className="absolute top-0 left-0 w-full h-full grid-cols-2 hidden lg:grid">
           <div className="relative w-full"></div>

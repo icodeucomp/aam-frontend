@@ -8,7 +8,7 @@ export default function Certification() {
   const t = useTranslations("certification.hero");
   return (
     <section className="overflow-x-hidden">
-      <Hero title={`${t("title")}`} description={`${t("description")}`} pathImg="/home-header.webp" />
+      <Hero title={`${t("title")}`} description={`${t("description")}`} />
       <CertificationLegalities />
     </section>
   );

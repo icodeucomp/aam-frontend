@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import * as React from "react";
 
 import { motion, MotionProps } from "framer-motion";
 
@@ -56,5 +56,13 @@ export const Motion = React.forwardRef<HTMLElement, MotionComponentProps>(
     );
   }
 );
+
+export const CustomMotion = ({ children, className }: { children: React.ReactNode; className: string }) => {
+  return (
+    <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }} transition={{ duration: 0.3 }} className={className}>
+      {children}
+    </motion.div>
+  );
+};
 
 Motion.displayName = "Motion";

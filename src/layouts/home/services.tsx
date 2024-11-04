@@ -12,7 +12,7 @@ export const Services = () => {
   const serviceLists = ServiceLists();
 
   return (
-    <Background src="/images/construction-progress.webp" parentClassName="bg-dark/30" className="grid justify-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-auto max-w-screen-2xl min-h-500">
+    <Background src="/images/construction-progress.webp" className="grid justify-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-auto max-w-screen-2xl min-h-500 filter-image">
       {serviceLists.map((item, index, row) => (
         <div
           key={index}

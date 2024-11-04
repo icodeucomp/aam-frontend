@@ -179,9 +179,6 @@
   .navbar-submenu {
     @apply absolute left-0 w-full shadow-lg bg-light-gray h-80 top-20 z-1000 opacity-0 transition-all duration-300 ease-in-out pointer-events-none;
   }
-  .filter {
-    @apply bg-gradient-to-b from-dark/80 to-dark/50;
-  }
   .filter-image {
     @apply bg-gradient-to-b from-dark/50 via-dark-blue/20 to-dark/50;
   }

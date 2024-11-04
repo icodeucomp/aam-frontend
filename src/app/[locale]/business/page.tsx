@@ -7,7 +7,7 @@ export default function Business() {
   const t = useTranslations("business.hero");
   return (
     <section className="overflow-x-hidden">
-      <Hero title={`${t("title")}`} description={`${t("description")}`} pathImg="/home-header.webp" />
+      <Hero title={`${t("title")}`} description={`${t("description")}`} />
       <Businesses />
     </section>
   );
