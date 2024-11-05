@@ -32,7 +32,7 @@ export const Modal = ({ isVisible, onClose, children }: ModalProps) => {
         transition={{ duration: 0.3, ease: "easeInOut" }}
       >
         <button className="btn-cross-border group" onClick={onClose}>
-          <RxCross1 size={20} className="text-primary group-hover:text-light" />
+          <RxCross1 size={20} className="text-secondary group-hover:text-light" />
         </button>
         {children}
       </motion.div>

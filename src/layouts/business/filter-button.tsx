@@ -6,7 +6,7 @@ import { useMediaQuery } from "@/hooks";
 
 import { AnimatePresence } from "framer-motion";
 
-import { Background, Button, Container, Dropdown, ImageSlider, Modal, Motion, Pagination } from "@/components";
+import { Background, Button, Container, CustomMotion, Dropdown, ImageSlider, Modal, Motion, Pagination } from "@/components";
 
 import { BusinessesTypes, BusinessSectorTypes } from "@/types";
 
@@ -72,7 +72,7 @@ export const FilterButton = ({ business }: { business: BusinessesTypes | undefin
   }, [isLargeDesktop, isDesktop, isTablet, isMobile]);
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 pb-12">
       <div className="relative py-10 mx-auto text-center max-w-screen-2xl">
         <h3 className="heading">Type of Business</h3>
         <p className="mt-2 max-w-60 sm:max-w-sm md:max-w-md lg:max-w-xl mx-auto text-sm md:text-base">Explore our various types of business solutions that suit your company&apos;s needs</p>
@@ -107,7 +107,7 @@ export const FilterButton = ({ business }: { business: BusinessesTypes | undefin
           </Motion>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 mt-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <CustomMotion key={page} className="grid grid-cols-1 gap-8 mt-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {sectorBusiness?.map((item, index) => (
             <div key={index} className="cursor-pointer" onClick={() => setOpenModalIndex(item.slug)}>
               <Motion tag="div" initialY={30} animateY={0} duration={1} delay={index * 0.1}>
@@ -120,23 +120,23 @@ export const FilterButton = ({ business }: { business: BusinessesTypes | undefin
               </Motion>
             </div>
           ))}
-        </div>
+        </CustomMotion>
 
         <AnimatePresence>
           {openModalIndex !== null && (
             <Modal isVisible={openModalIndex !== null} onClose={() => setOpenModalIndex(null)}>
-              <div className="flex flex-col gap-4 md:gap-8 md:flex-row">
+              <div className="grid grid-cols-1 w-full gap-4 pt-10 md:grid-cols-2">
                 {filterBusiness && filterBusiness?.media.length > 0 ? (
-                  <ImageSlider images={filterBusiness?.media?.map((item) => item.url)} imgClassName="w-72 sm:w-80 mx-auto lg:w-96 aspect-square rounded-lg" />
+                  <ImageSlider images={filterBusiness?.media?.map((item) => item.url)} imgClassName="w-72 sm:w-80 mx-auto lg:w-96 aspect-square" />
                 ) : (
-                  <ImageSlider images={["/temp-business.webp"]} imgClassName="w-72 sm:w-80 mx-auto lg:w-96 aspect-square rounded-lg" />
+                  <ImageSlider images={["/temp-business.webp"]} imgClassName="w-72 sm:w-80 mx-auto lg:w-96 aspect-square" />
                 )}
 
                 <div className="relative w-full space-y-4 md:space-y-8">
-                  <h3 className="text-xl font-medium sm:text-2xl md:text-3xl text-primary">{typeBusiness}</h3>
+                  <h3 className="text-xl font-medium sm:text-2xl md:text-2xl text-primary">{typeBusiness}</h3>
                   <div className="space-y-2 md:space-y-4">
-                    <h4 className="text-xl font-semibold sm:text-2xl md:text-3xl text-primary">{filterBusiness?.title}</h4>
-                    <p className="h-40 overflow-y-auto text-sm leading-tight text-justify md:h-60 sm:text-base xl:text-lg scrollbar">{filterBusiness?.description}</p>
+                    <h4 className="text-xl font-semibold sm:text-2xl text-primary">{filterBusiness?.title}</h4>
+                    <p className="h-40 overflow-y-auto text-sm leading-tight text-justify md:h-44 lg:h-60 sm:text-base xl:text-lg scrollbar">{filterBusiness?.description}</p>
                   </div>
                 </div>
               </div>

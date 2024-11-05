@@ -2,10 +2,11 @@
 
 import * as React from "react";
 
+import { useTranslations } from "next-intl";
+
 import { Background, Button, Img, Motion } from "@/components";
 
 import { Link } from "@/i18n/routing";
-import { useTranslations } from "next-intl";
 
 export const Hero = () => {
   const t = useTranslations("home.hero");

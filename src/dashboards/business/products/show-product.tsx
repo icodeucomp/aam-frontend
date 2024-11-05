@@ -36,7 +36,7 @@ export const ShowProduct = ({ slugProduct }: { slugProduct: string }) => {
 
               <div className="space-y-4">
                 <h4 className="text-xl font-semibold sm:text-2xl text-primary">{product?.data.title}</h4>
-                <p className="h-full pr-2 overflow-y-auto text-sm leading-tight text-justify md:h-64 sm:text-base scrollbar">{product?.data.description}</p>
+                <p className="h-40 overflow-y-auto text-sm leading-tight text-justify md:h-44 lg:h-60 sm:text-base xl:text-lg scrollbar">{product?.data.description}</p>
               </div>
             </div>
           </Modal>

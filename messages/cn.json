@@ -183,8 +183,8 @@
         "description": "在我们的项目执行中查找有关公司各种活动的最新信息。"
       },
       "albums": {
-        "title": "#LifeatTBM",
-        "description": "#LifeatTBM 通过照片捕捉了 TBM 团队的奉献、合作和让工作生活难忘的日常瞬间。"
+        "title": "#LifeatAAM",
+        "description": "#LifeatAAM 通过照片捕捉了 TBM 团队的奉献、合作和让工作生活难忘的日常瞬间。"
       },
       "articles-gallery": {
         "title": "文章库",
@@ -228,7 +228,7 @@
       "title": "媒体 ",
       "fields": {
         "one": "项目展厅",
-        "two": "#LifeatTBM",
+        "two": "#LifeatAAM",
         "three": "文章库"
       }
     },

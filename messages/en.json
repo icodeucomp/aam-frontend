@@ -183,8 +183,8 @@
         "description": "Find the latest information about various company activities in our project execution."
       },
       "albums": {
-        "title": "#LifeatTBM",
-        "description": "#LifeatTBM captures the spirit of TBM through photos that showcase our team's dedication, collaboration, and daily moments that make work life memorable."
+        "title": "#LifeatAAM",
+        "description": "#LifeatAAM captures the spirit of AAM through photos that showcase our team's dedication, collaboration, and daily moments that make work life memorable."
       },
       "articles-gallery": {
         "title": "Articles",
@@ -228,7 +228,7 @@
       "title": "Media",
       "fields": {
         "one": "Projects Gallery",
-        "two": "#LifeatTBM",
+        "two": "#LifeatAAM",
         "three": "Articles Gallery"
       }
     },

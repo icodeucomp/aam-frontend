@@ -44,7 +44,7 @@ export const Albums = () => {
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
-    push(`/media?album_keywords=${e.target.value}#lifeattbm`);
+    push(`/media?album_keywords=${e.target.value}#lifeataam`);
   };
 
   const handleClose = () => {
@@ -78,10 +78,10 @@ export const Albums = () => {
   }, [isDesktop, isTablet, isMobile]);
 
   return (
-    <Container className="pt-32" id="lifeattbm">
+    <Container className="pt-32" id="lifeataam">
       <div className="flex items-center justify-between mb-8">
         <Motion tag="h3" initialX={-50} animateX={0} duration={0.4} className="w-full heading">
-          #LifeatTBM
+          #LifeatAAM
         </Motion>
         <Motion tag="div" initialX={50} animateX={0} duration={0.8} delay={0.4} className="flex items-center gap-4">
           <div className="relative w-full max-w-xs hidden sm:block">

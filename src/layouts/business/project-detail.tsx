@@ -7,12 +7,12 @@ import { useRouter } from "@/i18n/routing";
 
 import { useGet, useMediaQuery } from "@/hooks";
 
-import { motion } from "framer-motion";
-import { Container, Img, Motion, Pagination } from "@/components";
+import { Container, CustomMotion, Img, Motion, Pagination } from "@/components";
 
 import { FaArrowLeft } from "react-icons/fa6";
 
 import { ResponseBusinessSectorTypes } from "@/types";
+import { AnimatePresence } from "framer-motion";
 
 export const ProjectDetail = ({ slug }: { slug: string }) => {
   const { back } = useRouter();
@@ -96,18 +96,13 @@ export const ProjectDetail = ({ slug }: { slug: string }) => {
         {imageProjects.length < 1 ? (
           <h3 className="w-full text-lg font-semibold text-center sm:text-2xl md:text-3xl text-gray/50">The projects photo gallery is not found</h3>
         ) : (
-          <motion.div
-            key={page}
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -50 }}
-            transition={{ duration: 0.3 }}
-            className="grid w-full grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 overflow-hidden"
-          >
-            {imageProjects.map((item, index) => (
-              <Img key={index} src={item.url} alt={item.slug} className="mx-auto rounded-lg aspect-square w-80 sm:w-72 md:w-80 xl:w-96" cover />
-            ))}
-          </motion.div>
+          <AnimatePresence mode="wait">
+            <CustomMotion key={page} className="grid w-full grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 overflow-hidden">
+              {imageProjects.map((item, index) => (
+                <Img key={index} src={item.url} alt={item.slug} className="mx-auto rounded-lg aspect-square w-80 sm:w-72 md:w-80 xl:w-96" cover />
+              ))}
+            </CustomMotion>
+          </AnimatePresence>
         )}
       </div>
     </Container>

@@ -14,7 +14,7 @@ import { PiCaretRightBold } from "react-icons/pi";
 
 import { SidebarProps } from "./types";
 
-export const sideBarMenu: { title: string; content?: string[] }[] = [{ title: "Article" }, { title: "Document" }, { title: "LifeatTBM" }, { title: "Business", content: ["Product", "Project"] }];
+export const sideBarMenu: { title: string; content?: string[] }[] = [{ title: "Article" }, { title: "Document" }, { title: "LifeatAAM" }, { title: "Business", content: ["Product", "Project"] }];
 
 export const Sidebar = ({ openNav, isTabletMid }: SidebarProps) => {
   const pathname = usePathname();
@@ -56,11 +56,11 @@ export const Sidebar = ({ openNav, isTabletMid }: SidebarProps) => {
       </div>
       <ul className="space-y-2">
         {sideBarMenu.map((item, index) => {
-          const isActive = splitPathname === item.title.toLowerCase() || splitPathname.startsWith(item.title === "LifeatTBM" ? "album" : `${item.title.toLowerCase()}/`);
+          const isActive = splitPathname === item.title.toLowerCase() || splitPathname.startsWith(item.title === "LifeatAAM" ? "album" : `${item.title.toLowerCase()}/`);
           return (
             <div className="w-full px-4" key={index}>
               <span className={`sidebar-menu group ${isActive ? "bg-primary" : "bg-light"}`}>
-                <Link href={`/admin/dashboard/${item.title === "LifeatTBM" ? "album" : item.title.toLowerCase()}`} className="block">
+                <Link href={`/admin/dashboard/${item.title === "LifeatAAM" ? "album" : item.title.toLowerCase()}`} className="block">
                   <span className={`absolute top-0 left-0 w-1 h-full bg-secondary group-hover:block ${isActive ? "block" : "hidden"}`}></span>
                   <p className={`text-lg font-medium group-hover:text-light ${isActive ? "text-light" : "text-primary"}`}>{item.title}</p>
                 </Link>

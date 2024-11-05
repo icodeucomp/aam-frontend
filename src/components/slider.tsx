@@ -3,9 +3,10 @@
 import * as React from "react";
 
 import { Container } from "./container";
-import { Motion } from "./motion";
+import { CustomMotion, Motion } from "./motion";
 import { Pagination } from "./pagination";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
+
 import { SliderProps } from "@/types";
 
 export const Slider = ({ title, loading, children, totalPage, className, parentClassName, page, setPage }: SliderProps) => {
@@ -26,9 +27,9 @@ export const Slider = ({ title, loading, children, totalPage, className, parentC
         </div>
       ) : (
         <AnimatePresence mode="wait">
-          <motion.div key={page} initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }} transition={{ duration: 0.3 }} className={className}>
+          <CustomMotion key={page} className={className}>
             {children}
-          </motion.div>
+          </CustomMotion>
         </AnimatePresence>
       )}
     </Container>

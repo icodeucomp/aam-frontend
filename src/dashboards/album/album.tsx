@@ -86,7 +86,7 @@ export const Albums = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-between gap-4 px-2 pb-2 border-b-2 border-secondary sm:items-end sm:flex-row">
-        <h1 className="text-xl font-semibold sm:text-2xl md:text-3xl">#LifeatTBM</h1>
+        <h1 className="text-xl font-semibold sm:text-2xl md:text-3xl">#LifeatAAM</h1>
         <span className="text-sm text-gray">Last Updated at: {albums?.newest}</span>
       </div>
       <div className="flex flex-col items-center justify-between gap-4 my-4 sm:flex-row">

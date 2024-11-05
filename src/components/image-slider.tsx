@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
+import { CustomMotion } from "./motion";
 import { Img } from "./image";
 
 import { PiCaretLeftThin, PiCaretRightThin } from "react-icons/pi";
@@ -39,9 +40,9 @@ export const ImageSlider: React.FC<SliderProps> = ({ images, imgClassName }) => 
       {/* Image Slide */}
       <div className="relative flex">
         <AnimatePresence initial={false} mode="wait">
-          <motion.div key={currentIndex} className="w-full h-full" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }} transition={{ duration: 0.3 }}>
+          <CustomMotion key={currentIndex} className="w-full h-full">
             <Img src={images[currentIndex] || "/temp-article.webp"} alt="image slider" className={`rounded-lg ${imgClassName ?? ""}`} cover />
-          </motion.div>
+          </CustomMotion>
         </AnimatePresence>
       </div>
 

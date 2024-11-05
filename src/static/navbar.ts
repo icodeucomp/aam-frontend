@@ -34,7 +34,7 @@ export const NavbarLists = () => {
           pathUrl: "#projects-gallery",
           description: `${t("media.projects-gallery.description")}`,
         },
-        { title: `${t("media.albums.title")}`, pathUrl: "#lifeattbm", description: `${t("media.albums.description")}` },
+        { title: `${t("media.albums.title")}`, pathUrl: "#lifeataam", description: `${t("media.albums.description")}` },
         { title: `${t("media.articles-gallery.title")}`, pathUrl: "#articles-gallery", description: `${t("media.articles-gallery.description")}` },
       ],
     },

@@ -21,7 +21,7 @@ export const FooterLists = () => {
       pathUrl: "/media",
       content: [
         { title: `${t("media.fields.one")}`, pathUrl: "#projects-gallery" },
-        { title: `${t("media.fields.two")}`, pathUrl: "#lifeattbm" },
+        { title: `${t("media.fields.two")}`, pathUrl: "#lifeataam" },
         { title: `${t("media.fields.three")}`, pathUrl: "#articles-gallery" },
       ],
     },
