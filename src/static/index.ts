@@ -6,3 +6,4 @@ export * from "./clients";
 export * from "./vision-mission";
 export * from "./organizational";
 export * from "./careers";
+export * from "./document";

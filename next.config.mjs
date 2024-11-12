@@ -8,7 +8,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "icodeu-storage.s3.ap-southeast-1.amazonaws.com",
+        hostname: "amanah-aulia-mandiri-storage.s3.ap-southeast-1.amazonaws.com",
+      },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
       },
     ],
   },

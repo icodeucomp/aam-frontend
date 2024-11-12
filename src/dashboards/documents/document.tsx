@@ -15,6 +15,7 @@ import { DisplayThumbnail, Img, Pagination } from "@/components";
 import { Filter } from "../filter";
 
 import { DocumentsTypes, ResponseDocumentsTypes } from "@/types";
+import { DEFAULT_FILE } from "@/static";
 
 const Content = ({ data }: { data: DocumentsTypes[] | undefined }) => {
   return (
@@ -25,9 +26,7 @@ const Content = ({ data }: { data: DocumentsTypes[] | undefined }) => {
         data?.map((item, index) => (
           <article key={index} className="w-full max-w-xs p-4 duration-300 rounded-md card-shadow text-dark-blue bg-light">
             <div className="preview-thumbnail-big">
-              <DisplayThumbnail
-                fileUrl={item.url || "https://icodeu-storage.s3.ap-southeast-1.amazonaws.com/documents/award/surat-pernyataan-ambil-sertifikat-toeflmuhammad-helmy-fadlail-albab-1728069726585.pdf"}
-              />
+              <DisplayThumbnail fileUrl={item.url || DEFAULT_FILE} />
             </div>
             <div className="flex gap-1 mt-2 text-sm text-dark-gray">
               <Img src="/icons/carbon-tag.svg" alt="calendar icon" className="size-4" />

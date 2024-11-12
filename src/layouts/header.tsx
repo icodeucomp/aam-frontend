@@ -51,7 +51,9 @@ export const Header = () => {
           <Navbar navbar={navbar} toggleNavbar={toggleNavbar} />
 
           <div className="hidden lg:block">
-            <Button className="shadow-lg btn-secondary">{t("btn-profile")}</Button>
+            <a href="/aulia-amanah-mandiri-company-profile.pdf" download="Aulia Amanah Mandiri Company Profile">
+              <Button className="shadow-lg btn-secondary">{t("btn-profile")}</Button>
+            </a>
           </div>
 
           <div className="block lg:hidden">

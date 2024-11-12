@@ -13,6 +13,8 @@ import { DateValueType } from "react-tailwindcss-datepicker";
 
 import { convertDate, formatDate } from "@/utils";
 
+import { DEFAULT_FILE } from "@/static";
+
 import { ResponseDocumentsTypes } from "@/types";
 
 export const CertificationLegalities = () => {
@@ -124,12 +126,7 @@ export const CertificationLegalities = () => {
                 ) : (
                   <>
                     <div className="flex justify-center w-full mt-4 lg:mt-20 preview-thumbnail-selected">
-                      <DisplayThumbnail
-                        fileUrl={
-                          selectedCard?.url ||
-                          "https://icodeu-storage.s3.ap-southeast-1.amazonaws.com/documents/award/surat-pernyataan-ambil-sertifikat-toeflmuhammad-helmy-fadlail-albab-1728069726585.pdf"
-                        }
-                      />
+                      <DisplayThumbnail fileUrl={selectedCard?.url || DEFAULT_FILE} />
                     </div>
                     <div className="space-y-2 text-dark-blue">
                       <h5 className="text-lg font-semibold sm:text-xl md:text-3xl">{selectedCard?.name}</h5>
