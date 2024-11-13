@@ -1,6 +1,10 @@
 "use client";
 
 import { ChangeEvent, useEffect, useState } from "react";
+
+import { useRouter } from "@/i18n/routing";
+import { useSearchParams } from "next/navigation";
+
 import { useGet } from "@/hooks";
 
 import { useDebounce } from "use-debounce";
@@ -18,10 +22,12 @@ import { DEFAULT_FILE } from "@/static";
 import { ResponseDocumentsTypes } from "@/types";
 
 export const CertificationLegalities = () => {
+  const { push } = useRouter();
+  const searchParams = useSearchParams();
+
   // filtered data state
   const [selectCard, setSelectCard] = useState<string>("");
 
-  const [searchTerm, setSearchTerm] = useState<string>("");
   const [sort, setSort] = useState<string>("uploadedAt");
   const [order, setOrder] = useState<string>("desc");
   const [page, setPage] = useState<number>(1);
@@ -31,11 +37,11 @@ export const CertificationLegalities = () => {
   const dateStart = formatDate(date?.startDate);
   const dateEnd = formatDate(date?.endDate);
 
-  const [debouncedSearchTerm] = useDebounce(searchTerm, 1000);
+  const [debouncedSearchTerm] = useDebounce(searchParams.get("documents_keywords"), 1000);
 
   const { response: documents, loading } = useGet<ResponseDocumentsTypes>({
     path: "/documents",
-    searchQuery: debouncedSearchTerm,
+    searchQuery: debouncedSearchTerm || "",
     limit: "4",
     page: page.toString(),
     sort,
@@ -54,7 +60,7 @@ export const CertificationLegalities = () => {
 
   const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
-    setSearchTerm(e.target.value);
+    push(`/profile/certification?documents_keywords=${e.target.value}#certification-legalities`);
   };
 
   useEffect(() => {
@@ -65,7 +71,7 @@ export const CertificationLegalities = () => {
   }, [documents]);
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden pt-10" id="certification-legalities">
       <div className="absolute top-0 left-0 hidden w-full h-full grid-cols-2 lg:grid">
         <div className="relative w-full"></div>
         <div className="relative w-full bg-light-gray"></div>
@@ -73,7 +79,7 @@ export const CertificationLegalities = () => {
       <Container className="py-10 space-y-8 sm:py-16 md:py-20">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
           <Motion tag="div" initialX={-40} animateX={0} duration={0.3} className="relative flex flex-col order-2 w-full lg:order-1 min-h-600">
-            <SearchFilter setFiltered={handleSetFiltered} setSearchTerm={handleSearch} searchTerm={searchTerm} date={date} setDate={setDate} />
+            <SearchFilter setFiltered={handleSetFiltered} setSearchTerm={handleSearch} searchTerm={searchParams.get("documents_keywords") || ""} date={date} setDate={setDate} />
             {loading ? (
               <div className="flex items-center justify-center min-h-500">
                 <div className="loader"></div>
