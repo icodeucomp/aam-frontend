@@ -23,8 +23,8 @@ export const Messages = () => {
   }, []);
 
   return (
-    <Container id="about-us" className="flex flex-col-reverse justify-between items-center gap-8 lg:gap-20 lg:flex-row">
-      <div className="w-full space-y-4 font-semibold flex-1 py-10">
+    <Container id="about-us" className="flex flex-col-reverse items-center justify-between gap-8 py-8 lg:gap-20 lg:flex-row">
+      <div className="flex-1 w-full py-10 space-y-4 font-semibold">
         <Motion tag="h2" initialX={-40} animateX={0} duration={0.3} className="heading">
           PT Amanah Aulia Mandiri
         </Motion>
@@ -38,7 +38,7 @@ export const Messages = () => {
           {t("description-two")}
         </Motion>
       </div>
-      <Motion tag="div" initialX={40} animateX={0} duration={0.6} delay={0.3} className="relative w-full flex justify-center flex-1">
+      <Motion tag="div" initialX={40} animateX={0} duration={0.6} delay={0.3} className="relative flex justify-center flex-1 w-full">
         <div className="overflow-hidden w-max h-max">
           <AnimatePresence mode="wait">
             <CustomMotion key={currentSlide} className={`w-full h-full`}>
@@ -46,7 +46,7 @@ export const Messages = () => {
             </CustomMotion>
           </AnimatePresence>
         </div>
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        <div className="absolute flex space-x-2 transform -translate-x-1/2 bottom-4 left-1/2">
           {images.map((_, index) => (
             <span key={index} className={`size-3 rounded-full ${index === currentSlide ? "bg-light" : "bg-gray/70"}`}></span>
           ))}

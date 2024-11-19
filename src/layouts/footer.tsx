@@ -30,7 +30,7 @@ export const Footer = () => {
               <span>amanahsrg@gmail.com</span>
             </div>
           </div>
-          <h5 className="text-sm">© Copyright PT Trijaya Berkah Mandiri</h5>
+          <h5 className="text-sm">© Copyright PT Amanah Aulia Mandiri</h5>
         </div>
         <div className="flex-1 hidden grid-cols-1 gap-8 mt-4 sm:grid lg:grid-cols-2 xl:grid-cols-3">
           {footerLists.map((footer, i) => (

@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { BusinessesTypes } from "@/types";
 
 export const Description = ({ business }: { business: BusinessesTypes | undefined }) => {
-  const templateMessage: string = `Halo%2C%20saya%20tertarik%20dengan%20layanan%20${business?.title}%20PT.Trijaya%20Berkah%20Mandiri.%0ABisakah%20saya%20mendapatkan%20informasi%20lebih%20lanjut%3F%20Terima%20kasih.`;
+  const templateMessage: string = `Halo%2C%20saya%20tertarik%20dengan%20layanan%20${business?.title}%20PT.Amanah%20Aulia%20Mandiri.%0ABisakah%20saya%20mendapatkan%20informasi%20lebih%20lanjut%3F%20Terima%20kasih.`;
 
   return (
     <Container className="py-16 lg:py-20 space-y-8">
