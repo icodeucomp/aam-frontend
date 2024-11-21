@@ -1,6 +1,8 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
+import { GoogleAnalytics } from "@next/third-parties/google";
+
 import { Poppins } from "next/font/google";
 
 import type { Metadata } from "next";
@@ -28,6 +30,7 @@ export default async function RootLayout({ children, params: { locale } }: { chi
 
   return (
     <html lang={locale}>
+      <GoogleAnalytics gaId="G-G22M9YR05N" />
       <body className={`${poppins.className} flex flex-col min-h-screen`}>
         <NextIntlClientProvider messages={messages}>
           <Toaster position="bottom-center" />
