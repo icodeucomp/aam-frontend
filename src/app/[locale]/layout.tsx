@@ -9,6 +9,7 @@ import type { Metadata } from "next";
 
 import { Toaster } from "react-hot-toast";
 import { Footer, Header } from "@/layouts";
+import Script from "next/script";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
@@ -30,7 +31,6 @@ export default async function RootLayout({ children, params: { locale } }: { chi
 
   return (
     <html lang={locale}>
-      <GoogleAnalytics gaId="G-G22M9YR05N" />
       <body className={`${poppins.className} flex flex-col min-h-screen`}>
         <NextIntlClientProvider messages={messages}>
           <Toaster position="bottom-center" />
@@ -39,6 +39,16 @@ export default async function RootLayout({ children, params: { locale } }: { chi
           <Footer />
         </NextIntlClientProvider>
       </body>
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          
+          gtag('config', 'G-G22M9YR05N');      
+        `}
+      </Script>
+      <GoogleAnalytics gaId="G-G22M9YR05N" />
     </html>
   );
 }
