@@ -1,5 +1,5 @@
 import { Button, Img, Motion } from "@/components";
-import { Link } from "@/i18n/routing";
+// import { Link } from "@/i18n/routing";
 import { CareerLists } from "@/static";
 
 export const Program = () => {
@@ -13,12 +13,12 @@ export const Program = () => {
           </div>
           <h5 className="text-xl font-semibold sm:text-2xl text-primary">{item.title}</h5>
           <p className="mb-8 text-sm sm:text-base">{item.description}</p>
-          <Link href="/" className="flex justify-end">
-            <Button className="flex items-center btn-secondary">
-              {item.buttonText}
-              <Img src="/icons/arrow-up-light.svg" alt="arrow-up-light" className="size-4 sm:size-6 md:size-8" />
-            </Button>
-          </Link>
+          <Button className="flex items-center ms-auto btn-secondary pointer-events-none opacity-80">
+            Coming Soon
+            {/* <Img src="/icons/arrow-up-light.svg" alt="arrow-up-light" className="size-4 sm:size-6 md:size-8" /> */}
+          </Button>
+          {/* <Link href="/" className="flex justify-end">
+          </Link> */}
         </Motion>
       ))}
     </div>
