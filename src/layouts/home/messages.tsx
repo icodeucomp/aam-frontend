@@ -33,7 +33,7 @@ export const Messages = () => {
       </Motion>
       <Motion tag="div" initialX={0} animateX={0} duration={0.8} delay={0.4} className="relative flex-1 h-full gap-4">
         <div className="relative w-full h-auto">
-          <video ref={videoRef} src="https://amanah-aulia-mandiri-storage.s3.ap-southeast-1.amazonaws.com/Launching+Website.mov" className="w-full h-auto rounded-lg shadow-lg" autoPlay muted loop />
+          <video ref={videoRef} src="https://amanah-aulia-mandiri-storage.s3.ap-southeast-1.amazonaws.com/Launching+Website.mp4" className="w-full h-auto rounded-lg shadow-lg" autoPlay muted loop />
           <button onClick={toggleMute} className="absolute px-2 py-2 rounded-lg text-light bg-dark-blue top-2 right-2">
             {isMuted ? <LuVolumeX size={20} /> : <LuVolume2 size={20} />}
           </button>
