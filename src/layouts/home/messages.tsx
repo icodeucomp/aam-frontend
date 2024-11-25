@@ -4,28 +4,22 @@ import * as React from "react";
 
 import { Container, Motion } from "@/components";
 import { useTranslations } from "next-intl";
+import { LuVolume2, LuVolumeX } from "react-icons/lu";
 
 export const Messages = () => {
   const t = useTranslations("home.message");
   const videoRef = React.useRef<HTMLVideoElement | null>(null);
-  const [showControls, setShowControls] = React.useState(false);
+  const [isMuted, setIsMuted] = React.useState(true);
 
-  const handleMouseEnter = () => {
-    setShowControls(true);
-  };
-
-  const handleMouseLeave = () => {
-    setShowControls(false);
-  };
-
-  React.useEffect(() => {
+  const toggleMute = () => {
     if (videoRef.current) {
-      videoRef.current.play();
+      videoRef.current.muted = !videoRef.current.muted;
+      setIsMuted(videoRef.current.muted);
     }
-  }, []);
+  };
 
   return (
-    <Container className="flex flex-col-reverse gap-8 py-10 sm:py-16 md:py-20 lg:flex-row">
+    <Container className="flex flex-col-reverse items-center gap-8 py-10 lg:gap-24 sm:py-16 md:py-20 lg:flex-row">
       <Motion tag="div" initialX={-50} animateX={0} duration={0.4} className="flex-1 space-y-4 font-semibold sm:space-y-2">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl text-dark-blue">{t("welcome")}</h2>
@@ -38,15 +32,11 @@ export const Messages = () => {
         </div>
       </Motion>
       <Motion tag="div" initialX={0} animateX={0} duration={0.8} delay={0.4} className="relative flex-1 h-full gap-4">
-        <div className="relative w-full h-auto" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-          <video
-            ref={videoRef}
-            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-            className="w-full h-auto rounded-lg shadow-lg"
-            controls={showControls}
-            autoPlay
-            muted
-          />
+        <div className="relative w-full h-auto">
+          <video ref={videoRef} src="https://amanah-aulia-mandiri-storage.s3.ap-southeast-1.amazonaws.com/Launching+Website.mov" className="w-full h-auto rounded-lg shadow-lg" autoPlay muted loop />
+          <button onClick={toggleMute} className="absolute px-2 py-2 rounded-lg text-light bg-dark-blue top-2 right-2">
+            {isMuted ? <LuVolumeX size={20} /> : <LuVolume2 size={20} />}
+          </button>
         </div>
       </Motion>
     </Container>
