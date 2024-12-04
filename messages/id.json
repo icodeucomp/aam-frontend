@@ -17,36 +17,36 @@
     },
     "services": {
       "one": {
-        "title": "General Supplier",
-        "description": "We provide services for supplying raw or semi-finished goods in accordance with contracts mutually agreed upon by both parties.."
+        "title": "Penyedia Umum",
+        "description": "Kami menyediakan layanan untuk memasok barang mentah atau setengah jadi sesuai dengan kontrak yang disepakati bersama."
       },
       "two": {
-        "title": "Construction",
-        "description": "We offer services for designing, constructing, and renovating infrastructure, including building structures and civil engineering works, as agreed upon by both parties."
+        "title": "Konstruksi",
+        "description": "Kami menawarkan layanan untuk merancang, membangun, dan merenovasi infrastruktur, termasuk bangunan dan pekerjaan teknik sipil."
       },
       "three": {
-        "title": "Civil",
-        "description": "We provide fabrication services that include component manufacturing, structural assembly, and custom product work as needed."
+        "title": "Sipil",
+        "description": "Kami menyediakan layanan fabrikasi yang meliputi pembuatan komponen, perakitan struktural, dan pekerjaan produk kustom sesuai kebutuhan."
       },
       "four": {
-        "title": "Robotic",
-        "description": "We provide mechanical services that include assembly, maintenance, and repair of industrial machinery and equipment."
+        "title": "Robotik",
+        "description": "Kami menyediakan layanan mekanik yang meliputi perakitan, pemeliharaan, dan perbaikan mesin serta peralatan industri."
       },
       "five": {
-        "title": "Fabrication",
-        "description": "We offer engineering services that include the design, development, and implementation of engineering solutions for various industries."
+        "title": "Fabrikasi",
+        "description": "Kami menawarkan layanan teknik yang mencakup desain, pengembangan, dan implementasi solusi teknik untuk berbagai industri."
       },
       "six": {
-        "title": "Mechanical",
-        "description": "We provide electrical services that include installation, maintenance, and repair of electrical systems for various industrial sectors."
+        "title": "Mekanik",
+        "description": "Kami menyediakan layanan listrik yang mencakup instalasi, pemeliharaan, dan perbaikan sistem kelistrikan untuk berbagai sektor industri."
       },
       "seven": {
-        "title": "Engineering",
-        "description": "We provide electrical services that include installation, maintenance, and repair of electrical systems for various industrial sectors."
+        "title": "Teknik",
+        "description": "Kami menyediakan layanan teknik yang mencakup desain, pengembangan, dan implementasi solusi teknik untuk berbagai industri."
       },
       "eight": {
-        "title": "Electrical",
-        "description": "We provide electrical services that include installation, maintenance, and repair of electrical systems for various industrial sectors."
+        "title": "Kelistrikan",
+        "description": "Kami menyediakan layanan listrik yang mencakup instalasi, pemeliharaan, dan perbaikan sistem kelistrikan untuk berbagai sektor industri."
       }
     },
     "clients": "Klien kami",

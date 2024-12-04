@@ -13,40 +13,40 @@
     "message": {
       "welcome": "欢迎来到",
       "description": "代表PT Amanah Aulia Mandiri (PT AAM) 的董事会和管理层, 我们对应对建筑行业的全球挑战表达了新的乐观态度。PT AAM致力于在技术、产品和流程上不断转型, 旨在提升生活质量和经济增长。通过强大的团队协同, PT AAM专注于促进人与企业和战略之间的合作, 准备以世界级的质量在全球竞争，共同创造更美好的未来。",
-      "job-title": "Director"
+      "job-title": "总监"
     },
     "services": {
       "one": {
-        "title": "General Supplier",
-        "description": "We provide services for supplying raw or semi-finished goods in accordance with contracts mutually agreed upon by both parties.."
+        "title": "综合供应商",
+        "description": "我们根据双方共同达成的合同，提供原材料或半成品的供应服务。"
       },
       "two": {
-        "title": "Construction",
-        "description": "We offer services for designing, constructing, and renovating infrastructure, including building structures and civil engineering works, as agreed upon by both parties."
+        "title": "建筑",
+        "description": "我们提供设计、建造和翻新基础设施的服务，包括建筑结构和土木工程工作，并由双方协商一致。"
       },
       "three": {
-        "title": "Civil",
-        "description": "We provide fabrication services that include component manufacturing, structural assembly, and custom product work as needed."
+        "title": "土木工程",
+        "description": "我们提供制造服务，包括组件制造、结构组装和定制产品工作，以满足需求。"
       },
       "four": {
-        "title": "Robotic",
-        "description": "We provide mechanical services that include assembly, maintenance, and repair of industrial machinery and equipment."
+        "title": "机器人技术",
+        "description": "我们提供机械服务，包括工业机器和设备的组装、维护和维修。"
       },
       "five": {
-        "title": "Fabrication",
-        "description": "We offer engineering services that include the design, development, and implementation of engineering solutions for various industries."
+        "title": "制造",
+        "description": "我们提供工程服务，包括工程解决方案的设计、开发和实施，适用于各种行业。"
       },
       "six": {
-        "title": "Mechanical",
-        "description": "We provide electrical services that include installation, maintenance, and repair of electrical systems for various industrial sectors."
+        "title": "机械",
+        "description": "我们提供电气服务，包括各个工业领域的电气系统安装、维护和维修。"
       },
       "seven": {
-        "title": "Engineering",
-        "description": "We provide electrical services that include installation, maintenance, and repair of electrical systems for various industrial sectors."
+        "title": "工程",
+        "description": "我们提供工程服务，包括工程解决方案的设计、开发和实施，适用于各种行业。"
       },
       "eight": {
-        "title": "Electrical",
-        "description": "We provide electrical services that include installation, maintenance, and repair of electrical systems for various industrial sectors."
+        "title": "电气",
+        "description": "我们提供电气服务，包括各个工业领域的电气系统安装、维护和维修。"
       }
     },
     "clients": "我们的客户",

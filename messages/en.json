@@ -18,35 +18,35 @@
     "services": {
       "one": {
         "title": "General Supplier",
-        "description": "We provide services for supplying raw or semi-finished goods in accordance with contracts mutually agreed upon by both parties.."
+        "description": "Providing services for supplying raw or semi-finished goods in accordance with contracts mutually agreed upon by both parties."
       },
       "two": {
         "title": "Construction",
-        "description": "We offer services for designing, constructing, and renovating infrastructure, including building structures and civil engineering works, as agreed upon by both parties."
+        "description": "Offering services for designing, constructing, and renovating infrastructure, including building structures and civil engineering works, as agreed upon by both parties."
       },
       "three": {
         "title": "Civil",
-        "description": "We provide fabrication services that include component manufacturing, structural assembly, and custom product work as needed."
+        "description": "Providing fabrication services including component manufacturing, structural assembling, and customizing products as needed."
       },
       "four": {
         "title": "Robotic",
-        "description": "We provide mechanical services that include assembly, maintenance, and repair of industrial machinery and equipment."
+        "description": "Providing mechanical services such as assembling, maintaining, and repairing industrial machinery and equipment."
       },
       "five": {
         "title": "Fabrication",
-        "description": "We offer engineering services that include the design, development, and implementation of engineering solutions for various industries."
+        "description": "Offering engineering services that include designing, developing, and implementing solutions for various industries."
       },
       "six": {
         "title": "Mechanical",
-        "description": "We provide electrical services that include installation, maintenance, and repair of electrical systems for various industrial sectors."
+        "description": "Providing electrical services, including installing, maintaining, and repairing electrical systems for various industrial sectors."
       },
       "seven": {
         "title": "Engineering",
-        "description": "We provide electrical services that include installation, maintenance, and repair of electrical systems for various industrial sectors."
+        "description": "Providing engineering services, including designing, developing, and implementing solutions for various industries."
       },
       "eight": {
         "title": "Electrical",
-        "description": "We provide electrical services that include installation, maintenance, and repair of electrical systems for various industrial sectors."
+        "description": "Providing electrical services, including installing, maintaining, and repairing electrical systems for various industrial sectors."
       }
     },
     "clients": "Our Clients",
